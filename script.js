@@ -11,12 +11,12 @@ var xValue = function(d) { return d.date;}, // data -> value
 
  //setup y
 //var yValue = function(d) { return d.values[0].rating;},  data -> value
-var yValue = function(d) { return d.checkedResponseCount;}, // data -> value
+var yValue = function(d) { return d.rating;}, // data -> value
     yScale = d3.scale.linear().range([height, 0]), // value -> display
     yMap = function(d) { return yScale(yValue(d));}, // data -> display
     yAxis = d3.svg.axis().scale(yScale).orient("left");
 
-var dateFormat = d3.time.format("%Y.%m.%d").parse;
+var dateFormat = d3.time.format("%Y-%m-%d").parse;
 
 //var line = d3.svg.line()
 //
@@ -26,7 +26,7 @@ var dateFormat = d3.time.format("%Y.%m.%d").parse;
 
  //setup fill color
 var cValue = function(d) { return d.key;},
-    color = d3.scale.category10();
+    cScale = d3.scale.category20();
 
  //add the graph canvas to the body of the webpage
   var svg = d3.select("body").append("svg")
@@ -36,17 +36,19 @@ var cValue = function(d) { return d.key;},
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
  //load data
-d3.json("banki2.json", function(error, data) {
+d3.json("banki.json", function(error, data) {
 
   data.forEach(function(d) {
     d.date = dateFormat(d.date);
   });
+  data = data.sort(function(a, b){return a.date-b.date;});
   var dataNested = d3.nest()
     .key(function(d) { return d.agentId; })
     .entries(data);
 
   xScale.domain(d3.extent(data, function(d) { return d.date; }));
   yScale.domain([d3.min(data, yValue)-1, d3.max(data, yValue)+1]);
+  cScale.domain(d3.extent(data, function(d) { return d.agentId; }));
 
    //x-axis
   svg.append("g")
@@ -82,8 +84,21 @@ d3.json("banki2.json", function(error, data) {
       .enter()
       .append("path")
       .attr("d", function(d){return line(d.values);})
-      .attr("stroke", "black")
-      .attr("stroke-width", 0.1);
+      .attr("stroke", function(d){return cScale(cValue(d));})
+      .attr("stroke-width", 1)
+      .attr("fill", "none")
+      .on('mouseover', function(d){
+        var nodeSelection = d3.select(this).style({
+          stroke:'black',
+          "stroke-width": 2
+        });
+      })
+      .on('mouseout', function(d){
+        d3.select(this).style({
+          stroke: cScale(cValue(d)),
+          "stroke-width": 1
+        })
+      });
   //var bank = svg.selectAll("g")
       //.data(dataNested)
       //.enter()
