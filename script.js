@@ -11,7 +11,7 @@ var xValue = function(d) { return d.date;}, // data -> value
 
  //setup y
 //var yValue = function(d) { return d.values[0].rating;},  data -> value
-var yValue = function(d) { return d.rating;}, // data -> value
+var yValue = function(d) { return d.middleGrade;}, // data -> value
     yScale = d3.scale.linear().range([height, 0]), // value -> display
     yMap = function(d) { return yScale(yValue(d));}, // data -> display
     yAxis = d3.svg.axis().scale(yScale).orient("left");
@@ -25,7 +25,7 @@ var dateFormat = d3.time.format("%Y-%m-%d").parse;
 
 
  //setup fill color
-var cValue = function(d) { return d.key;},
+var cValue = function(d) { return d.agentId;},
     cScale = d3.scale.category20();
 
  //add the graph canvas to the body of the webpage
@@ -79,26 +79,58 @@ d3.json("banki.json", function(error, data) {
       .y(function(d) { return yScale(yValue(d)); });
 
   // draw lines
-  svg.selectAll("path")
+  //svg.selectAll("path")
+      //.data(dataNested)
+      //.enter()
+      //.append("path")
+      //.attr("d", function(d){return line(d.values);})
+      //.attr("stroke", function(d){return cScale(cValue(d));})
+      //.attr("stroke-width", 1)
+      //.attr("fill", "none")
+      //.on('mouseover', function(d){
+        //var nodeSelection = d3.select(this).style({
+          //stroke:'black',
+          //"stroke-width": 2
+        //});
+      //})
+      //.on('mouseout', function(d){
+        //d3.select(this).style({
+          //stroke: cScale(cValue(d)),
+          //"stroke-width": 1
+        //})
+      //});
+  group = svg.selectAll("g")
       .data(dataNested)
       .enter()
-      .append("path")
-      .attr("d", function(d){return line(d.values);})
-      .attr("stroke", function(d){return cScale(cValue(d));})
-      .attr("stroke-width", 1)
-      .attr("fill", "none")
+      .append("g")
+      .attr("opacity", 0.5)
       .on('mouseover', function(d){
         var nodeSelection = d3.select(this).style({
-          stroke:'black',
-          "stroke-width": 2
+          opacity: 1.0
         });
+        nodeSelection.selectAll("circle")
+          .style({
+            fill: "black"
+          });
       })
       .on('mouseout', function(d){
-        d3.select(this).style({
-          stroke: cScale(cValue(d)),
-          "stroke-width": 1
-        })
+        var nodeSelection = d3.select(this).style({
+          opacity: 0.5
+        });
+        nodeSelection.selectAll("circle")
+          .style({
+            fill: null
+          });
       });
+
+  path = group.selectAll("circle")
+      .data(function(d){return d.values;})
+      .enter()
+      .append("circle")
+      .attr("r", 1)
+      .attr("cx", function(d){return xScale(xValue(d));})
+      .attr("cy", function(d){return yScale(yValue(d));})
+      .attr("fill", function(d){return cScale(cValue(d));});
   //var bank = svg.selectAll("g")
       //.data(dataNested)
       //.enter()
