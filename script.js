@@ -2,31 +2,31 @@ var margin = {top: 20, right: 20, bottom: 30, left: 40},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
-// setup x 
-//var xValue = function(d) { return d.values[0].checkedResponseCount;}, // data -> value
+//var xValue = function(d) { return d.middleGrade;}, // data -> value
+    //xScale = d3.scale.linear().range([0, width]), // value -> display
 var xValue = function(d) { return d.date;}, // data -> value
     xScale = d3.time.scale().range([0, width]), // value -> display
-    xMap = function(d) { return xScale(xValue(d));}, // data -> display
     xAxis = d3.svg.axis().scale(xScale).orient("bottom");
 
- //setup y
-//var yValue = function(d) { return d.values[0].rating;},  data -> value
 var yValue = function(d) { return d.middleGrade;}, // data -> value
     yScale = d3.scale.linear().range([height, 0]), // value -> display
-    yMap = function(d) { return yScale(yValue(d));}, // data -> display
     yAxis = d3.svg.axis().scale(yScale).orient("left");
+
+//var oValue = function(d) { return d.date;}, // data -> value
+    //oScale = d3.scale.linear().range([0, 1]); // value -> display
+
+//var sValue = function(d) { return d.date;}, // data -> value
+    //sScale = d3.scale.linear().range([0, 4]); // value -> display
+
+//setup fill color
+var cValue = function(d) { return d.agentId;},
+    cScale = d3.scale.category20();
 
 var dateFormat = d3.time.format("%Y-%m-%d").parse;
 
-//var line = d3.svg.line()
-//
-    //.x(function(d) { return [0,10,200,300,40]; })
-    //.y(function(d) { return [0,500,12,55,564]; });
-
-
- //setup fill color
-var cValue = function(d) { return d.agentId;},
-    cScale = d3.scale.category20();
+var line = d3.svg.line()
+    .x(function(d) { return xScale(xValue(d)); })
+    .y(function(d) { return yScale(yValue(d)); });
 
  //add the graph canvas to the body of the webpage
   var svg = d3.select("body").append("svg")
@@ -36,9 +36,11 @@ var cValue = function(d) { return d.agentId;},
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
  //load data
-d3.json("/data-banki.ru/banki-all-modes-stripped.json", function(errorData, data) {
-  //d3.json("/data-banki.ru/banki-names.json", function(errorNames, dataNames) {
+d3.json("/data-banki.ru/ratings-top50.json", function(errorData, data) {
+  d3.json("/data-banki.ru/names-required.json", function(errorNames, dataNames) {
     //var bankIDs = dataNames.map(function(d){return d.id;});
+    //console.log(bankIDs);
+    //var bankIDs = [189984, 196721, 5919];
     //data = data.filter(function(d){return bankIDs.includes(d.agentId);});
     //document.write(JSON.stringify(data));
     data.forEach(function(d) {
@@ -48,10 +50,14 @@ d3.json("/data-banki.ru/banki-all-modes-stripped.json", function(errorData, data
     var dataNested = d3.nest()
       .key(function(d) { return d.agentId; })
       .entries(data);
+    console.log(dataNested);
 
-    xScale.domain(d3.extent(data, function(d) { return d.date; }));
-    yScale.domain([d3.min(data, yValue)-1, d3.max(data, yValue)+1]);
+    xScale.domain(d3.extent(data, xValue));
+    //yScale.domain(d3.extent(data, yValue));
+    yScale.domain([1,5]);
     cScale.domain(d3.extent(data, function(d) { return d.agentId; }));
+    //oScale.domain(d3.extent(data, oValue));
+    //sScale.domain(d3.extent(data, sValue));
 
      //x-axis
     svg.append("g")
@@ -63,7 +69,7 @@ d3.json("/data-banki.ru/banki-all-modes-stripped.json", function(errorData, data
         .attr("x", width)
         .attr("y", -6)
         .style("text-anchor", "end")
-        .text("time");
+        .text(xValue.toString());
 
      //y-axis
     svg.append("g")
@@ -75,39 +81,16 @@ d3.json("/data-banki.ru/banki-all-modes-stripped.json", function(errorData, data
         .attr("y", 6)
         .attr("dy", ".71em")
         .style("text-anchor", "end")
-        .text("rating");
+        .text(yValue.toString());
 
-    var line = d3.svg.line()
-        .x(function(d) { return xScale(xValue(d)); })
-        .y(function(d) { return yScale(yValue(d)); });
-
-    // draw lines
-    //svg.selectAll("path")
-        //.data(dataNested)
-        //.enter()
-        //.append("path")
-        //.attr("d", function(d){return line(d.values);})
-        //.attr("stroke", function(d){return cScale(cValue(d));})
-        //.attr("stroke-width", 1)
-        //.attr("fill", "none")
-        //.on('mouseover', function(d){
-          //var nodeSelection = d3.select(this).style({
-            //stroke:'black',
-            //"stroke-width": 2
-          //});
-        //})
-        //.on('mouseout', function(d){
-          //d3.select(this).style({
-            //stroke: cScale(cValue(d)),
-            //"stroke-width": 1
-          //})
-        //});
-    group = svg.selectAll("g")
+    var group = svg.selectAll("g")
         .data(dataNested)
         .enter()
         .append("g")
         .attr("opacity", 0.3)
         .on('mouseover', function(d){
+
+          console.log(dataNames.filter(function(n){return n.id.toString() == d.key;})[0]);
           var nodeSelection = d3.select(this).style({
             opacity: 1.0
           });
@@ -126,39 +109,37 @@ d3.json("/data-banki.ru/banki-all-modes-stripped.json", function(errorData, data
             });
         });
 
-    path = group.selectAll("circle")
+    var circles = group.selectAll("circle")
         .data(function(d){return d.values;})
         .enter()
         .append("circle")
-        .attr("r", 1)
         .attr("cx", function(d){return xScale(xValue(d));})
         .attr("cy", function(d){return yScale(yValue(d));})
+        //.attr("r", function(d){return sScale(sValue(d));})
+        .attr("r", 1)
         .attr("fill", function(d){return cScale(cValue(d));});
-    //var bank = svg.selectAll("g")
-        //.data(dataNested)
-        //.enter()
-        //.append("g")
-        //.attr("class", "bank");
 
-    //var circle = bank.selectAll("circle")
-        //.data(function(d){return d.values;})
-        //.enter()
-        //.append("circle")
-        //.attr("r", 1)
-        //.attr("cx", function(d){ return xScale(xValue(d)); })
-        //.attr("cy", function(d){ return yScale(yValue(d)); });
-
-       //##          ##
-         //##      ##
-       //##############
-     //####  ######  ####
-    //######################
-    //##  ##############  ##
-    //##  ##          ##  ##
-         //####  ####
-
-    //console.log(dataNested[0].values.map(function(d){return [d.products.credits, d.products.businesscredits];}));
-    //TODO А остановился я на том, что всё работает правильно. Линия действительно рисуется, но, похоже, данные такие, что она вырождается в точку.
+    //// draw lines
+    //var lines = svg.selectAll("path")
+      //.data(dataNested)
+      //.enter()
+      //.append("path")
+      //.attr("d", function(d){return line(d.values);})
+      //.attr("stroke", function(d){return cScale(cValue(d.values[0]));})
+      //.attr("stroke-width", 0.3)
+      //.attr("fill", "none")
+      //.on('mouseover', function(d){
+        //var nodeSelection = d3.select(this).style({
+          //stroke:'black',
+          //"stroke-width": 1
+        //});
+      //})
+      //.on('mouseout', function(d){
+        //d3.select(this).style({
+          //stroke: cScale(cValue(d)),
+          //"stroke-width": null
+        //})
+      //});
 
     //// draw legend
     //var legend = svg.selectAll(".legend")
@@ -181,5 +162,5 @@ d3.json("/data-banki.ru/banki-all-modes-stripped.json", function(errorData, data
         //.attr("dy", ".35em")
         //.style("text-anchor", "end")
         //.text(function(d) { return d;})
-  //});
+  });
 });
