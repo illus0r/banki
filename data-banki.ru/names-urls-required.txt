@@ -1,0 +1,113 @@
+http://www.banki.ru/banks/bank/13532/ Московский Капитал
+http://www.banki.ru/banks/bank/137122/ Капитал Кредит
+http://www.banki.ru/banks/bank/2tbank/ 2Т Банк
+http://www.banki.ru/banks/bank/360/ Международный Промышленный Банк
+http://www.banki.ru/banks/bank/68696/ Петровский
+http://www.banki.ru/banks/bank/82162/ Межпромбанк Плюс
+http://www.banki.ru/banks/bank/917/ МДМ-Банк
+http://www.banki.ru/banks/bank/95880/ Северная Казна
+http://www.banki.ru/banks/bank/absolutbank/ Абсолют Банк
+http://www.banki.ru/banks/bank/activecapitalbank/ АктивКапитал Банк
+http://www.banki.ru/banks/bank/aenbank/ АйМаниБанк
+http://www.banki.ru/banks/bank/akbars/ Ак Барс
+http://www.banki.ru/banks/bank/alfabank/ Альфа-Банк
+http://www.banki.ru/banks/bank/amtbank/ АМТ Банк
+http://www.banki.ru/banks/bank/arxbank/ Арксбанк
+http://www.banki.ru/banks/bank/avangard/ Авангард
+http://www.banki.ru/banks/bank/baltinvestbank/ Балтинвестбанк
+http://www.banki.ru/banks/bank/baltiyskiy_bank/ Балтийский Банк
+http://www.banki.ru/banks/bank/bank24ru/ Банк24.ру
+http://www.banki.ru/banks/bank/bank_itb/ Банк ИТБ
+http://www.banki.ru/banks/bank/bgfbank/ Банк Жилищного Финансирования
+http://www.banki.ru/banks/bank/binbank/ Бинбанк
+http://www.banki.ru/banks/bank/binbankcreditcard/ Бинбанк кредитные карты
+http://www.banki.ru/banks/bank/bmbank/ БМ-Банк (бывш. Банк Москвы)
+http://www.banki.ru/banks/bank/bnpparibasbank/ БНП Париба Банк
+http://www.banki.ru/banks/bank/bnpparibaseast/ Сетелем Банк
+http://www.banki.ru/banks/bank/bpf/ Банк Проектного Финансирования
+http://www.banki.ru/banks/bank/bsgv/ Банк Сосьете Женераль Восток
+http://www.banki.ru/banks/bank/bspb/ Банк «Санкт-Петербург»
+http://www.banki.ru/banks/bank/citibank/ Ситибанк
+http://www.banki.ru/banks/bank/crediteuropebank/ Кредит Европа Банк
+http://www.banki.ru/banks/bank/deltacredit/ ДельтаКредит
+http://www.banki.ru/banks/bank/europlan/ Бинбанк Столица
+http://www.banki.ru/banks/bank/expobank/ Экспобанк
+http://www.banki.ru/banks/bank/fininvest/ Фининвест
+http://www.banki.ru/banks/bank/finservice/ Банк Финсервис
+http://www.banki.ru/banks/bank/fk_otkritie/ ФК Открытие
+http://www.banki.ru/banks/bank/gazprombank/ Газпромбанк
+http://www.banki.ru/banks/bank/gemoneybank/ Современный Коммерческий Банк (бывш. ДжиИ Мани Банк)
+http://www.banki.ru/banks/bank/globexbank/ Глобэкс
+http://www.banki.ru/banks/bank/homecreditbank/ Хоум Кредит Банк
+http://www.banki.ru/banks/bank/impexbank/ ИМПЭКСБанк
+http://www.banki.ru/banks/bank/intercommerzbank/ Интеркоммерц Банк
+http://www.banki.ru/banks/bank/intesa/ Банк Интеза
+http://www.banki.ru/banks/bank/investbank/ Инвестбанк
+http://www.banki.ru/banks/bank/investtorgbank/ Инвестторгбанк
+http://www.banki.ru/banks/bank/jugra/ Югра
+http://www.banki.ru/banks/bank/khmb/ Ханты-Мансийский банк Открытие
+http://www.banki.ru/banks/bank/kit_finance/ КИТ Финанс Инвестиционный Банк
+http://www.banki.ru/banks/bank/lefco-bank/ Лефко-Банк
+http://www.banki.ru/banks/bank/locko-bank/ Локо-Банк
+http://www.banki.ru/banks/bank/masterbank/ Мастер-Банк
+http://www.banki.ru/banks/bank/mdmbank/ МДМ Банк
+http://www.banki.ru/banks/bank/minbank/ Московский Индустриальный Банк
+http://www.banki.ru/banks/bank/mkb/ Московский Кредитный Банк
+http://www.banki.ru/banks/bank/modulbank/ Модульбанк
+http://www.banki.ru/banks/bank/moskommertsbank/ Москоммерцбанк
+http://www.banki.ru/banks/bank/mosoblbank/ Московский Областной Банк
+http://www.banki.ru/banks/bank/mpbank/ Межрегиональный Почтовый Банк
+http://www.banki.ru/banks/bank/mts-bank/ МТС Банк
+http://www.banki.ru/banks/bank/nordea/ Нордеа Банк
+http://www.banki.ru/banks/bank/oceanbank/ Океан Банк
+http://www.banki.ru/banks/bank/otkritie/ Банк «Открытие»
+http://www.banki.ru/banks/bank/otpbank/ ОТП Банк
+http://www.banki.ru/banks/bank/ovk/ Первое О. В. К.
+http://www.banki.ru/banks/bank/petrocommerce/ Петрокоммерц
+http://www.banki.ru/banks/bank/pochtabank/ Почта Банк
+http://www.banki.ru/banks/bank/prb/ Первый Республиканский Банк
+http://www.banki.ru/banks/bank/prbb/ Пробизнесбанк
+http://www.banki.ru/banks/bank/promsvyazbank/ Промсвязьбанк
+http://www.banki.ru/banks/bank/pushkino/ Пушкино
+http://www.banki.ru/banks/bank/qiwibank/ Киви Банк
+http://www.banki.ru/banks/bank/raiffeisen/ Райффайзенбанк
+http://www.banki.ru/banks/bank/rencredit/ Ренессанс Кредит
+http://www.banki.ru/banks/bank/rgsbank/ Росгосстрах Банк
+http://www.banki.ru/banks/bank/rosavtobank/ Росавтобанк
+http://www.banki.ru/banks/bank/rosbank/ Росбанк
+http://www.banki.ru/banks/bank/roscap/ Российский Капитал
+http://www.banki.ru/banks/bank/rosevrobank/ РосЕвроБанк
+http://www.banki.ru/banks/bank/rosinterbank/ РосинтерБанк
+http://www.banki.ru/banks/bank/rsb/ Русский Стандарт
+http://www.banki.ru/banks/bank/rsb24/ Банк РСБ 24 (Русславбанк)
+http://www.banki.ru/banks/bank/rshb/ Россельхозбанк
+http://www.banki.ru/banks/bank/rusfinancebank/ Русфинанс Банк
+http://www.banki.ru/banks/bank/sbbank/ СБ Банк (Судостроительный банк)
+http://www.banki.ru/banks/bank/sberbank/ Сбербанк России
+http://www.banki.ru/banks/bank/sct/ Бест Эффортс Банк
+http://www.banki.ru/banks/bank/sdm-bank/ СДМ-Банк
+http://www.banki.ru/banks/bank/skb-bank/ СКБ-Банк
+http://www.banki.ru/banks/bank/slavcred/ Славянский Кредит
+http://www.banki.ru/banks/bank/smpbank/ СМП Банк
+http://www.banki.ru/banks/bank/sobinbank/ Собинбанк
+http://www.banki.ru/banks/bank/sovcombank/ Совкомбанк
+http://www.banki.ru/banks/bank/soyuz/ Союз
+http://www.banki.ru/banks/bank/svyaznoybank/ Связной Банк
+http://www.banki.ru/banks/bank/tcs/ Тинькофф Банк
+http://www.banki.ru/banks/bank/touchbank/ Тач Банк
+http://www.banki.ru/banks/bank/transcapitalbank/ Транскапиталбанк (ТКБ)
+http://www.banki.ru/banks/bank/transcreditbank/ Транскредитбанк
+http://www.banki.ru/banks/bank/transportny/ Транспортный
+http://www.banki.ru/banks/bank/trust/ Национальный Банк «Траст»
+http://www.banki.ru/banks/bank/ubrr/ Уральский Банк Реконструкции и Развития
+http://www.banki.ru/banks/bank/uniastrum/ Юниаструм Банк
+http://www.banki.ru/banks/bank/unicreditbank/ ЮниКредит Банк
+http://www.banki.ru/banks/bank/uralsib/ Банк Уралсиб
+http://www.banki.ru/banks/bank/v-express-bank/ Восточный Экспресс Банк
+http://www.banki.ru/banks/bank/vitasbank/ Витас Банк
+http://www.banki.ru/banks/bank/vozrozhdenie/ Возрождение
+http://www.banki.ru/banks/bank/vtb-sz/ ВТБ Северо-Запад
+http://www.banki.ru/banks/bank/vtb/ ВТБ Банк Москвы
+http://www.banki.ru/banks/bank/vtb24/ ВТБ 24
+http://www.banki.ru/banks/bank/yandexdengi/ Яндекс.Деньги
+http://www.banki.ru/banks/bank/zapadny/ Западный
