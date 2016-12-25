@@ -199,7 +199,7 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         .domain(d3.extent(data, xValue)), // value -> display
       thumbnailXAxis = d3.svg.axis().scale(thumbnailXScale).orient("bottom");
 
-  var thumbnailYValue_ = function(d) { return d.deposites;}, // data -> value
+  var thumbnailYValue_ = function(d) { return d.deposits;}, // data -> value
       thumbnailYScale = d3.scale.linear()
         .range([thumbnailSvgSize.height, 0]) // value -> display
         .domain([1,5]),
@@ -212,9 +212,10 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
       .x(function(d) { return thumbnailXScale(thumbnailXValue(d)); })
       .y(function(d) { return thumbnailYScale(d.middleGrade); });
 
-  var thumbnailLineDeposites = d3.svg.line()
-      .x(function(d) { return thumbnailXScale(thumbnailXValue(d)); })
-      .y(function(d) { return thumbnailYScale(d.deposites); });
+  var thumbnailLine= d3.svg.line()
+      .x(function(d) { return thumbnailXScale(d); })
+      .y(function(d) { return thumbnailYScale(d); })
+      .interpolate("basis");
 
       // Addidng lots of small `svg`s and binding data to each of them.
       var thumbnailDiv = d3.select("body").selectAll("div.thumbnail")
@@ -249,12 +250,11 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         .attr("stroke-width", 1)
         .attr("fill", "none");
 
-      var thumbnailGraphProducts = thumbnailSvg.selectAll("path.deposite")
+      var thumbnailGraphProducts = thumbnailSvg.selectAll("path.deposit")
         .data(function(d){
-          console.log(d);
-          var temp = dataProductsNested.filter(function(n){
+          var temp = [dataProductsNested.filter(function(n){
             return d.key === n.id.toString();
-          })[0].values;
+          })[0].values];
           console.log(temp);
           return temp;
         })
@@ -263,7 +263,7 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
           //console.log(d);
         //});
         .append("path")
-        .attr("d", function(d){return thumbnailLineDeposites(d);})
+        .attr("d", function(d){return thumbnailLineDeposits(d);})
         .attr("stroke", "green")
         .attr("stroke-width", 0.5)
         .attr("fill", "none");
