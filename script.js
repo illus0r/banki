@@ -1,7 +1,7 @@
-var svgMainMargin = {top: 20, right: 20, bottom: 30, left: 40},
+var svgMainMargin = {top: 10, right: 20, bottom: 30, left: 40},
     svgMainSize = { 
-      width:  900 - svgMainMargin.left - svgMainMargin.right,
-      height: 235 - svgMainMargin.top - svgMainMargin.bottom
+      width:  754 - svgMainMargin.left - svgMainMargin.right,
+      height: 630 - svgMainMargin.top - svgMainMargin.bottom
     };
 
 //var xValue = function(d) { return d.middleGrade;}, // data -> value
@@ -9,29 +9,33 @@ var svgMainMargin = {top: 20, right: 20, bottom: 30, left: 40},
 var xValue = function(d) { return d.date;}, // data -> value
     xScale = d3.time.scale().range([0, svgMainSize.width]), // value -> display
     xAxis = d3.svg.axis().scale(xScale).orient("bottom");
-
 var yValue = function(d) { return d.middleGrade;}, // data -> value
     yScale = d3.scale.linear().range([svgMainSize.height, 0]), // value -> display
     yAxis = d3.svg.axis().scale(yScale).orient("left");
+var xValue = function(d) { return d.date;}, // data -> value
+    xScale = d3.time.scale().range([0, svgMainSize.width]), // value -> display
+    xAxis = d3.svg.axis().scale(xScale).orient("bottom");
+var yValueResponses = function(d) { return d.responseCountIncrease;}, // data -> value
+    yScaleResponses = d3.scale.linear().range([svgMainSize.height, svgMainSize.height - 50]); // value -> display
 
 //var oValue = function(d) { return d.date;}, // data -> value
     //oScale = d3.scale.linear().range([0, 1]); // value -> display
-
 //var sValue = function(d) { return d.date;}, // data -> value
     //sScale = d3.scale.linear().range([0, 4]); // value -> display
 
 //setup fill color
 var cValue = function(d) { return d.agentId;},
     cScale = d3.scale.category20();
-
 var dateFormat = d3.time.format("%Y-%m-%d").parse;
-
 var line = d3.svg.line()
     .x(function(d) { return xScale(xValue(d)); })
     .y(function(d) { return yScale(yValue(d)); });
+var lineResponses = d3.svg.line()
+    .x(function(d) { return xScale(xValue(d)); })
+    .y(function(d) { return yScaleResponses(yValueResponses(d)); });
 
  //add the graph canvas to the body of the webpage
-  var svgMain = d3.select("body").append("svg")
+  var svgMain = d3.select("#main").append("svg")
       .attr("width", svgMainSize.width + svgMainMargin.left + svgMainMargin.right)
       .attr("height", svgMainSize.height + svgMainMargin.top + svgMainMargin.bottom)
       .style("display", "block")
@@ -48,14 +52,38 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
       //data = data.filter(function(d){return bankIDs.includes(d.agentId);});
       //document.write(JSON.stringify(data));
 
+      //
       // Praparing data
+      //
       data.forEach(function(d) {
         d.date = dateFormat(d.date);
       });
+      var maxDate = d3.max(data, function(d){return d.date;})
+      console.log(maxDate);
       data = data.sort(function(a, b){return a.date-b.date;});
       var dataNested = d3.nest()
         .key(function(d) { return d.agentId; })
         .entries(data);
+      dataNested.forEach(function(d) {
+        var responseCountPrevious = 0;
+        d.values.forEach(function(n) {
+          n.responseCountIncrease = n.responseCount - responseCountPrevious;
+          responseCountPrevious = n.responseCount;
+        });
+        var matchingNames = dataNames.filter(function(n){
+          return (n.id.toString() === d.key);
+        });
+        if(matchingNames){
+          d.title = matchingNames[0].title;
+        }
+        d.isLive = d.values[d.values.length-1].date >= maxDate ? true : false;
+        d.rating = d.values[d.values.length-1].rating;
+      });
+      // sorting by rating, but live first
+      dataNested = dataNested.sort( function(a, b){
+          return (a.rating - 9999*a.isLive) - (b.rating - 9999*b.isLive);
+        }
+      );
 
       // Preparing dataProducts
       dataProducts = dataProducts.map(function(d){return {
@@ -63,7 +91,8 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
           date: d.date,
           middleGrade: parseFloat(d.middleGrade),
           debitcards: parseFloat(d.debitcards),
-          deposits: parseFloat(d.deposits)
+          deposits: parseFloat(d.deposits),
+          credits: parseFloat(d.credits)
         };
       });
       dataProducts.forEach(function(d) {
@@ -84,16 +113,17 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         });
         if (matchingNames.length > 0){
           if (matchingNames[0].hasOwnProperty('id')){
-            console.log(".");
             d.id = matchingNames[0].id;
           }
         }
       });
       dataProductsNested = dataProductsNested.filter(function(d) {return d.id});
 
-      xScale.domain(d3.extent(data, xValue));
+      //xScale.domain(d3.extent(data, xValue));
+      xScale.domain([dateFormat("2004-06-01"), dateFormat("2017-01-01")]);
       //yScale.domain(d3.extent(data, yValue));
       yScale.domain([1,5]);
+      yScaleResponses.domain([0,200]);
       cScale.domain(d3.extent(data, function(d) { return d.agentId; }));
       //oScale.domain(d3.extent(data, oValue));
       //sScale.domain(d3.extent(data, sValue));
@@ -127,6 +157,9 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
           .enter()
           .append("g")
           .style("opacity", 0.3)
+          .attr("fill",   function(d){return d.isLive? cScale(cValue(d.values[0])) : "silver";})
+          .attr("stroke", function(d){return d.isLive? cScale(cValue(d.values[0])) : "silver";})
+          .attr("stroke-width", 0.5)
           .on('mouseover', function(d){
             console.log(dataNames.filter(function(n){return n.id.toString() === d.key;})[0]);
             var nodeSelection = d3.select(this).style({
@@ -135,6 +168,10 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
             nodeSelection.selectAll("circle")
               .style({
                 fill: "black"
+              });
+            nodeSelection.selectAll("path")
+              .style({
+                stroke: "black"
               });
           })
           .on('mouseout', function(d){
@@ -145,18 +182,66 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
               .style({
                 fill: null
               });
+            nodeSelection.selectAll("path")
+              .style({
+                stroke: null,
+              });
           });
 
-      var circles = group.selectAll("circle")
+      //var pointWidth = 2;
+      var pointWidth = xScale(dateFormat("2000-01-07")) - xScale(dateFormat("2000-01-01"));
+      var pointHeight = 3;
+      var points = group.selectAll("rect")
           .data(function(d){return d.values;})
           .enter()
-          .append("circle")
-          .attr("cx", function(d){return xScale(xValue(d));})
-          .attr("cy", function(d){return yScale(yValue(d));})
+          .append("rect")
+          .attr("x", function(d){return xScale(xValue(d)) - pointWidth/2;})
+          .attr("y", function(d){return yScale(yValue(d)) - pointHeight/2;})
+          .attr("width", pointWidth)
+          .attr("height", pointHeight)
           //.attr("r", function(d){return sScale(sValue(d));})
-          .attr("r", 1)
-          .attr("fill", function(d){return cScale(cValue(d));});
+          .attr("r", 3);
+      var pointConnector = group.selectAll("path.connector")
+        .data(function(d){return [d];})
+        .enter()
+        .append("path")
+        .attr("class", "connector")
+        .attr("d", function(d){return line(d.values);})
+        .attr("fill", "none");
+      
+      //var circleResponses = group.selectAll("circle.response")
+          //.data(function(d){return d.values;})
+          //.enter()
+          //.append("circle")
+          //.attr("class", "response")
+          //.attr("cx", function(d){return xScale(xValue(d));})
+          //.attr("cy", function(d){return yScaleResponses(yValueResponses(d));})
+          ////.attr("r", function(d){return sScale(sValue(d));})
+          //.attr("r", 1)
+          //.attr("fill", function(d){return cScale(cValue(d));});
 
+      var circlePaths = group.selectAll("path.response")
+        .data(function(d){return [d];})
+        .enter()
+        .append("path")
+        .attr("class", "response")
+        .attr("d", function(d){return lineResponses(d.values);})
+        .attr("stroke-width", 1)
+        .attr("stroke", "black")
+        .attr("fill", "none");
+        //.on('mouseover', function(d){
+          //var nodeSelection = d3.select(this).style({
+            //stroke:'black',
+            //"stroke-width": 1
+          //});
+        //})
+        //.on('mouseout', function(d){
+          //d3.select(this).style({
+            //stroke: cScale(cValue(d)),
+            //"stroke-width": null
+          //})
+        //});
+      
       //var paths = svgMain.selectAll("path")
         //.data(dataNested)
         //.enter()
@@ -189,8 +274,8 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
                                      //####  ####
   var thumbnailSvgMargin = {top: 0, right: 0, bottom: 0, left: 0},
       thumbnailSvgSize = {
-        width: 200 - thumbnailSvgMargin.left - thumbnailSvgMargin.right,
-        height: 50 - thumbnailSvgMargin.top - thumbnailSvgMargin.bottom
+        width: 225 - thumbnailSvgMargin.left - thumbnailSvgMargin.right,
+        height: 57 - thumbnailSvgMargin.top - thumbnailSvgMargin.bottom
       };
 
   var thumbnailXValue = function(d) { return d.date;}, // data -> value
@@ -212,21 +297,41 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
       .x(function(d) { return thumbnailXScale(thumbnailXValue(d)); })
       .y(function(d) { return thumbnailYScale(d.middleGrade); });
 
-  var thumbnailLine= d3.svg.line()
-      .x(function(d) { return thumbnailXScale(d); })
-      .y(function(d) { return thumbnailYScale(d); })
+  var thumbnailLineDeposits = d3.svg.line()
+      .x(function(d) { return thumbnailXScale(d.date); })
+      .y(function(d) { return thumbnailYScale(d.deposits); })
+      .interpolate("basis");
+
+  var thumbnailLineDebitcards = d3.svg.line()
+      .x(function(d) { return thumbnailXScale(d.date); })
+      .y(function(d) { return thumbnailYScale(d.debitcards); })
+      .interpolate("basis");
+
+  var thumbnailLineCredits = d3.svg.line()
+      .x(function(d) { return thumbnailXScale(d.date); })
+      .y(function(d) { return thumbnailYScale(d.credits); })
       .interpolate("basis");
 
       // Addidng lots of small `svg`s and binding data to each of them.
-      var thumbnailDiv = d3.select("body").selectAll("div.thumbnail")
+      var thumbnailDiv = d3.select("#list").selectAll("div.thumbnail")
         .data(dataNested)
         .enter()
         .append("div")
-        .attr("class","thumbnail")
-        .style({
-          "border": "1px solid silver",
-          "display": "inline-block"
-        });
+        .attr("class", function(d){return d.isLive? "live" : "dead";})
+        .classed("thumbnail", true);
+
+      var thumbnailHeader = thumbnailDiv.append("header");
+
+      var thumbnailTitle = thumbnailHeader.append("h2")
+        .text( function(d){return d.title;});
+
+      //var thumbnailTitle = thumbnailHeader.append("h2")
+        //.text( function(d){return d.title;});
+      //var img = new Image();
+      //img.onerror = function() {alert("error")};
+      //img.onabort = function() {alert("abort")};
+      //img.onload = function() {alert("success")};
+      //img.src = "404_not_found.png";
 
       var thumbnailSvg = thumbnailDiv.append("svg")
         .attr("width", thumbnailSvgSize.width + thumbnailSvgMargin.left + thumbnailSvgMargin.right)
@@ -234,15 +339,32 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         .append("g")
         .attr("transform", "translate(" + thumbnailSvgMargin.left + "," + thumbnailSvgMargin.top + ")");
 
-      //var thumbnailGraph = thumbnailSvg.selectAll("path")
-        //.data( function(d){
-          //console.log();
-          //return dataNested.filter( function(n){
-            //return n.key === d.id.toString();
-          //})[0].values;
-        //})
-        //.enter()
-        
+      var thumbnailGraphProducts = thumbnailSvg.selectAll("path.deposit")
+        .data(function(d){
+          var temp = [dataProductsNested.filter(function(n){
+            return d.key === n.id.toString();
+          })[0].values];
+          return temp;
+        })
+        .enter();
+      thumbnailGraphProducts
+        .append("path")
+        .attr("d", function(d){return thumbnailLineDeposits(d);})
+        .attr("stroke", "purple")
+        .attr("stroke-width", 0.5)
+        .attr("fill", "none");
+      thumbnailGraphProducts
+        .append("path")
+        .attr("d", function(d){return thumbnailLineCredits(d);})
+        .attr("stroke", "orange")
+        .attr("stroke-width", 0.5)
+        .attr("fill", "none");
+      thumbnailGraphProducts
+        .append("path")
+        .attr("d", function(d){return thumbnailLineDebitcards(d);})
+        .attr("stroke", "blue")
+        .attr("stroke-width", 0.5)
+        .attr("fill", "none");
       var thumbnailGraph = thumbnailSvg
         .append("path")
         .attr("d", function(d){return thumbnailLineMiddleGrade(d.values);})
@@ -250,23 +372,17 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         .attr("stroke-width", 1)
         .attr("fill", "none");
 
-      var thumbnailGraphProducts = thumbnailSvg.selectAll("path.deposit")
-        .data(function(d){
-          var temp = [dataProductsNested.filter(function(n){
-            return d.key === n.id.toString();
-          })[0].values];
-          console.log(temp);
-          return temp;
-        })
-        .enter()
-        //.call( function(d){
-          //console.log(d);
-        //});
-        .append("path")
-        .attr("d", function(d){return thumbnailLineDeposits(d);})
-        .attr("stroke", "green")
-        .attr("stroke-width", 0.5)
-        .attr("fill", "none");
+      var thumbnailGrades = thumbnailDiv.append("div")
+        .attr("class", "grades");
+
+      var thumbnailGradesRating = thumbnailGrades
+        .append("div")
+        .attr("class", "rating")
+        .text("Рейтинг")
+        .append("span")
+        .text( function(d){return d.rating.toFixed(1).replace(".", ",");})
+        ;
+
     });
   });
 });

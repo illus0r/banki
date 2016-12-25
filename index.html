@@ -1,34 +1,19 @@
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
-
-<!-- Example based on http://bl.ocks.org/mbostock/3887118 -->
-<!-- Tooltip example from http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html -->
-
-<style>
-body {
-  font: 11px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.dot {
-  stroke: #000;
-}
-
-.tooltip {
-  position: absolute;
-  width: 200px;
-  height: 28px;
-  pointer-events: none;
-}
-</style>
+<head>
+<link rel="stylesheet" href="style.css" />
+</head>
 <body>
+
+<div id="main">
+<div class="site-description">
+  <h1>Народный рейтинг банков</h1>
+  <p>Данные сайта Банки.ру помогут выбрать банк для вклада, получения кредита и дебетовой карты.</p>
+  <p>Методика вычисления оценок</p>
+</div>
+</div>
+<div id="list"></div>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="https://d3js.org/d3-time.v1.min.js"></script>
 <script src="./script.js"></script>
