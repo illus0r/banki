@@ -65,7 +65,6 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
       var dataNested = d3.nest()
         .key(function(d) { return d.agentId; })
         .entries(data);
-      dataNested = dataNested.slice(0,14); // TODO remove
       dataNested.forEach(function(d) {
         var responseCountPrevious = 0;
         d.values.forEach(function(n) {
