@@ -80,6 +80,9 @@ h2{
   width: 200px;
 }
 
+svg g.main-group{
+  cursor: pointer;
+}
 
 /*layout*/
 
@@ -102,8 +105,9 @@ body{
 }
 
 #list{
-  margin-left: 60%;
-  width: 40%;
+  margin-left: 50%;
+  width: 50%;
+  margin-top: 61px;
   /*margin-right: -40px;*/
 }
 
@@ -113,9 +117,10 @@ body{
   width: 225px;
   display: inline-block;
   position: relative;
-  height: 121px;
-  margin-right: 20px;
+  /*height: 121px;*/
+  margin-left: 25px;
   margin-bottom: 30px;
+  /*cursor: pointer;*/
 }
 
   .thumbnail.dead{
@@ -123,21 +128,44 @@ body{
   }
 
   .thumbnail svg{
-    position: absolute;
-    top: 1.2em;
-    left: 0;
     border-bottom: 1px solid #ddd;
   }
 
-  .thumbnail .grades{
-    position: absolute;
-    bottom: 0;
+  .thumbnail header{
+    margin-top: -9px;
+    margin-bottom: 7px;
   }
-  
-  .thumbnail .grades .rating span{
+  .thumbnail h2{
+    display: inline;
+    background: white;
+    line-height: 1;
+    /*padding-right: 10px;*/
+  }
+  .thumbnail .grades{
+  }
+  .thumbnail .middle-grade{
+    float: left;
+  }
+  .thumbnail .middle-grade .value{
     display: block;
-    font-size: 2em;
+    font-size: 2.6em;
     font-weight: bold;
     line-height: 0.9;
     margin-bottom: 3px;
   }
+  .thumbnail .grades-products{
+    float: right;
+  }
+  .thumbnail .grades-products span{
+    display: block;
+    text-align: right;
+  }
+.thumbnail .grades-products span.deposits{
+  color: #66C2A5;
+}
+.thumbnail .grades-products span.debitcards{
+  color: #FEA075;
+}
+.thumbnail .grades-products span.credits{
+  color: #FFDE3C;
+}

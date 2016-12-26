@@ -11,12 +11,13 @@ var xValue = function(d) { return d.date;}, // data -> value
     xAxis = d3.svg.axis().scale(xScale).orient("bottom");
 var yValue = function(d) { return d.middleGrade;}, // data -> value
     yScale = d3.scale.linear().range([svgMainSize.height, 0]), // value -> display
-    yAxis = d3.svg.axis().scale(yScale).orient("left");
+    yAxis = d3.svg.axis().scale(yScale).orient("left").ticks(5);
 var xValue = function(d) { return d.date;}, // data -> value
     xScale = d3.time.scale().range([0, svgMainSize.width]), // value -> display
     xAxis = d3.svg.axis().scale(xScale).orient("bottom");
 var yValueResponses = function(d) { return d.responseCountIncrease;}, // data -> value
     yScaleResponses = d3.scale.linear().range([svgMainSize.height, svgMainSize.height - 50]); // value -> display
+    yAxisResponses = d3.svg.axis().scale(yScaleResponses).orient("left").ticks(1);
 
 //var oValue = function(d) { return d.date;}, // data -> value
     //oScale = d3.scale.linear().range([0, 1]); // value -> display
@@ -64,6 +65,7 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
       var dataNested = d3.nest()
         .key(function(d) { return d.agentId; })
         .entries(data);
+      dataNested = dataNested.slice(0,14); // TODO remove
       dataNested.forEach(function(d) {
         var responseCountPrevious = 0;
         d.values.forEach(function(n) {
@@ -78,10 +80,14 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         }
         d.isLive = d.values[d.values.length-1].date >= maxDate ? true : false;
         d.rating = d.values[d.values.length-1].rating;
+        d.middleGrade = d.values[d.values.length-1].middleGrade;
+        d.deposits = d.values[d.values.length-1].middleGrade; // TODO fix these 3 lines
+        d.credits = d.values[d.values.length-1].middleGrade;
+        d.debitcards = d.values[d.values.length-1].middleGrade;
       });
       // sorting by rating, but live first
       dataNested = dataNested.sort( function(a, b){
-          return (a.rating - 9999*a.isLive) - (b.rating - 9999*b.isLive);
+          return (b.rating + 9999*b.isLive) - (a.rating + 9999*a.isLive) ;
         }
       );
 
@@ -120,7 +126,7 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
       dataProductsNested = dataProductsNested.filter(function(d) {return d.id});
 
       //xScale.domain(d3.extent(data, xValue));
-      xScale.domain([dateFormat("2004-06-01"), dateFormat("2017-01-01")]);
+      xScale.domain([dateFormat("2004-12-31"), dateFormat("2017-01-01")]);
       //yScale.domain(d3.extent(data, yValue));
       yScale.domain([1,5]);
       yScaleResponses.domain([0,200]);
@@ -137,8 +143,7 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
           .attr("class", "label")
           .attr("x", svgMainSize.width)
           .attr("y", -6)
-          .style("text-anchor", "end")
-          .text(xValue.toString());
+          .style("text-anchor", "end");
 
        //y-axis
       svgMain.append("g")
@@ -150,45 +155,50 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
           .attr("y", 6)
           .attr("dy", ".71em")
           .style("text-anchor", "end")
-          .text(yValue.toString());
+          .text("Средняя оценка");
 
-      var group = svgMain.selectAll("g")
+       //y-axis
+      //svgMain.append("g")
+          //.attr("class", "axis-responses")
+          //.call(yAxisResponses)
+          //.attr("transform", "translate("+svgMainSize.width+")")
+          //.append("text")
+          //.attr("class", "label")
+          //.attr("transform", "rotate(-90)")
+          //.attr("y", 6)
+          //.attr("dy", ".71em")
+          //.style("text-anchor", "end")
+          //.text("Отзывы");
+
+      var group = svgMain.selectAll("g.main-group")
           .data(dataNested)
           .enter()
           .append("g")
+          .attr("class", "main-group")
           .style("opacity", 0.3)
+          .attr("id", function(d) { return "group"+d.key; })
           .attr("fill",   function(d){return d.isLive? cScale(cValue(d.values[0])) : "silver";})
           .attr("stroke", function(d){return d.isLive? cScale(cValue(d.values[0])) : "silver";})
           .attr("stroke-width", 0.5)
           .on('mouseover', function(d){
-            console.log(dataNames.filter(function(n){return n.id.toString() === d.key;})[0]);
             var nodeSelection = d3.select(this).style({
-              opacity: 1.0
+              opacity: 1.0,
+              fill: "black",
+              stroke: "black"
             });
-            nodeSelection.selectAll("circle")
-              .style({
-                fill: "black"
-              });
-            nodeSelection.selectAll("path")
-              .style({
-                stroke: "black"
-              });
+          })
+          .on('click', function(d){
+            console.log(dataNames.filter(function(n){return n.id.toString() === d.key;})[0]);
+            showBank(d.key);
           })
           .on('mouseout', function(d){
             var nodeSelection = d3.select(this).style({
-              opacity: 0.3
+              opacity: 0.3,
+              fill: null,
+              stroke: null
             });
-            nodeSelection.selectAll("circle")
-              .style({
-                fill: null
-              });
-            nodeSelection.selectAll("path")
-              .style({
-                stroke: null,
-              });
           });
 
-      //var pointWidth = 2;
       var pointWidth = xScale(dateFormat("2000-01-07")) - xScale(dateFormat("2000-01-01"));
       var pointHeight = 3;
       var points = group.selectAll("rect")
@@ -209,60 +219,16 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         .attr("d", function(d){return line(d.values);})
         .attr("fill", "none");
       
-      //var circleResponses = group.selectAll("circle.response")
-          //.data(function(d){return d.values;})
-          //.enter()
-          //.append("circle")
-          //.attr("class", "response")
-          //.attr("cx", function(d){return xScale(xValue(d));})
-          //.attr("cy", function(d){return yScaleResponses(yValueResponses(d));})
-          ////.attr("r", function(d){return sScale(sValue(d));})
-          //.attr("r", 1)
-          //.attr("fill", function(d){return cScale(cValue(d));});
-
-      var circlePaths = group.selectAll("path.response")
-        .data(function(d){return [d];})
-        .enter()
-        .append("path")
-        .attr("class", "response")
-        .attr("d", function(d){return lineResponses(d.values);})
-        .attr("stroke-width", 1)
-        .attr("stroke", "black")
-        .attr("fill", "none");
-        //.on('mouseover', function(d){
-          //var nodeSelection = d3.select(this).style({
-            //stroke:'black',
-            //"stroke-width": 1
-          //});
-        //})
-        //.on('mouseout', function(d){
-          //d3.select(this).style({
-            //stroke: cScale(cValue(d)),
-            //"stroke-width": null
-          //})
-        //});
-      
-      //var paths = svgMain.selectAll("path")
-        //.data(dataNested)
+      //var responsesPaths = group.selectAll("path.response")
+        //.data(function(d){return [d];})
         //.enter()
         //.append("path")
-        //.attr("d", function(d){return line(d.values);})
-        //.attr("stroke", function(d){return cScale(cValue(d.values[0]));})
-        //.attr("stroke-width", 0.3)
-        //.attr("fill", "none")
-        //.on('mouseover', function(d){
-          //var nodeSelection = d3.select(this).style({
-            //stroke:'black',
-            //"stroke-width": 1
-          //});
-        //})
-        //.on('mouseout', function(d){
-          //d3.select(this).style({
-            //stroke: cScale(cValue(d)),
-            //"stroke-width": null
-          //})
-        //});
-
+        //.attr("class", "response")
+        //.attr("d", function(d){return lineResponses(d.values);})
+        //.attr("stroke-width", 0.1)
+        //.attr("stroke", "black")
+        //.attr("fill", "none");
+      
 
                                    //##          ##
                                      //##      ##
@@ -272,6 +238,7 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
                                //##  ##############  ##
                                //##  ##          ##  ##
                                      //####  ####
+
   var thumbnailSvgMargin = {top: 0, right: 0, bottom: 0, left: 0},
       thumbnailSvgSize = {
         width: 225 - thumbnailSvgMargin.left - thumbnailSvgMargin.right,
@@ -283,30 +250,23 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         .range([0, thumbnailSvgSize.width])
         .domain(d3.extent(data, xValue)), // value -> display
       thumbnailXAxis = d3.svg.axis().scale(thumbnailXScale).orient("bottom");
-
   var thumbnailYValue_ = function(d) { return d.deposits;}, // data -> value
       thumbnailYScale = d3.scale.linear()
         .range([thumbnailSvgSize.height, 0]) // value -> display
         .domain([1,5]),
       thumbnailYAxis = d3.svg.axis().scale(thumbnailYScale).orient("left");
 
-  //var thumbnailLine = d3.svg.line()
-      //.x(function(d) { return thumbnailXScale(thumbnailXValue(d)); });
-
   var thumbnailLineMiddleGrade = d3.svg.line()
       .x(function(d) { return thumbnailXScale(thumbnailXValue(d)); })
       .y(function(d) { return thumbnailYScale(d.middleGrade); });
-
   var thumbnailLineDeposits = d3.svg.line()
       .x(function(d) { return thumbnailXScale(d.date); })
       .y(function(d) { return thumbnailYScale(d.deposits); })
       .interpolate("basis");
-
   var thumbnailLineDebitcards = d3.svg.line()
       .x(function(d) { return thumbnailXScale(d.date); })
       .y(function(d) { return thumbnailYScale(d.debitcards); })
       .interpolate("basis");
-
   var thumbnailLineCredits = d3.svg.line()
       .x(function(d) { return thumbnailXScale(d.date); })
       .y(function(d) { return thumbnailYScale(d.credits); })
@@ -317,21 +277,25 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         .data(dataNested)
         .enter()
         .append("div")
+        .attr("id", function(d){return "thumbnail-header-"+d.key;})
         .attr("class", function(d){return d.isLive? "live" : "dead";})
-        .classed("thumbnail", true);
-
-      var thumbnailHeader = thumbnailDiv.append("header");
-
-      var thumbnailTitle = thumbnailHeader.append("h2")
-        .text( function(d){return d.title;});
-
-      //var thumbnailTitle = thumbnailHeader.append("h2")
-        //.text( function(d){return d.title;});
-      //var img = new Image();
-      //img.onerror = function() {alert("error")};
-      //img.onabort = function() {alert("abort")};
-      //img.onload = function() {alert("success")};
-      //img.src = "404_not_found.png";
+        .classed("thumbnail", true)
+        .on('mouseover', function(d){
+          var mainGraph = d3.select("#group"+d.key.toString())
+          .style({
+            stroke:'black',
+            "stroke-width": 1,
+            opacity: 1
+          })
+        })
+        .on('mouseout', function(d){
+          var mainGraph = d3.select("#group"+d.key.toString())
+          .style({
+            opacity: 0.3,
+            fill: null,
+            stroke: null
+          });
+        });
 
       var thumbnailSvg = thumbnailDiv.append("svg")
         .attr("width", thumbnailSvgSize.width + thumbnailSvgMargin.left + thumbnailSvgMargin.right)
@@ -350,39 +314,81 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
       thumbnailGraphProducts
         .append("path")
         .attr("d", function(d){return thumbnailLineDeposits(d);})
-        .attr("stroke", "purple")
-        .attr("stroke-width", 0.5)
+        .attr("stroke", "#66C2A5")
+        .attr("stroke-width", 1)
         .attr("fill", "none");
       thumbnailGraphProducts
         .append("path")
         .attr("d", function(d){return thumbnailLineCredits(d);})
-        .attr("stroke", "orange")
-        .attr("stroke-width", 0.5)
+        .attr("stroke", "#FEA075")
+        .attr("stroke-width", 1)
         .attr("fill", "none");
       thumbnailGraphProducts
         .append("path")
         .attr("d", function(d){return thumbnailLineDebitcards(d);})
-        .attr("stroke", "blue")
-        .attr("stroke-width", 0.5)
+        .attr("stroke", "#FFDE3C")
+        .attr("stroke-width", 1)
         .attr("fill", "none");
       var thumbnailGraph = thumbnailSvg
         .append("path")
         .attr("d", function(d){return thumbnailLineMiddleGrade(d.values);})
         .attr("stroke", "black")
-        .attr("stroke-width", 1)
+        .attr("stroke-width", 1.5)
         .attr("fill", "none");
+
+      var thumbnailHeader = thumbnailDiv.append("header");
+
+      var thumbnailTitle = thumbnailHeader.append("h2")
+        .text( function(d){return d.title;});
+
+      //var thumbnailTitle = thumbnailHeader.append("h2")
+        //.text( function(d){return d.title;});
+      //var img = new Image();
+      //img.onerror = function() {alert("error")};
+      //img.onabort = function() {alert("abort")};
+      //img.onload = function() {alert("success")};
+      //img.src = "404_not_found.png";
+
 
       var thumbnailGrades = thumbnailDiv.append("div")
         .attr("class", "grades");
 
-      var thumbnailGradesRating = thumbnailGrades
+      var thumbnailGradesMiddleGrade = thumbnailGrades
         .append("div")
-        .attr("class", "rating")
-        .text("Рейтинг")
+        .attr("class", "middle-grade");
+      var thumbnailGradesMiddleGradeLabel = thumbnailGradesMiddleGrade
         .append("span")
-        .text( function(d){return d.rating.toFixed(1).replace(".", ",");})
-        ;
-
+        .attr("class", "label")
+        .text("средняя оценка");
+      var thumbnailGradesMiddleGradeValue = thumbnailGradesMiddleGrade
+        .append("span")
+        .attr("class", "value")
+        .text( function(d){return d.middleGrade.toFixed(1).replace(".", ",");});
+      var thumbnailGradesProducts = thumbnailGrades
+        .append("div")
+        .attr("class", "grades-products");
+      var thumbnailGradesProductsDeposits = thumbnailGradesProducts
+        .append("span")
+        .attr("class", "deposits")
+        .text( function(d){return "по вкладам "+d.deposits.toFixed(1).replace(".", ",");});
+      var thumbnailGradesProductsDebitcards = thumbnailGradesProducts
+        .append("span")
+        .attr("class", "debitcards")
+        .text( function(d){return "деб. картам "+d.debitcards.toFixed(1).replace(".", ",");});
+      var thumbnailGradesProductsCredits = thumbnailGradesProducts
+        .append("span")
+        .attr("class", "credits")
+        .text( function(d){return "кредитам "+d.credits.toFixed(1).replace(".", ",");});
     });
   });
 });
+
+function showBank(key){
+  console.log(key);
+  var id = "#thumbnail-header-"+key;
+  location = id;
+  d3.select(id)
+    .style("background", "rgb(255, 204, 102)")
+    .transition().duration(2000)
+    .style("background", "white");
+}
