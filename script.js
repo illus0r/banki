@@ -87,7 +87,7 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
       });
       // sorting by rating, but live first
       dataNested = dataNested.sort( function(a, b){
-          return (b.rating + 9999*b.isLive) - (a.rating + 9999*a.isLive) ;
+          return (b.middleGrade + 9999*b.isLive) - (a.middleGrade + 9999*a.isLive) ;
         }
       );
 
@@ -386,9 +386,19 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
 function showBank(key){
   console.log(key);
   var id = "#thumbnail-header-"+key;
-  location = id;
-  d3.select(id)
-    .style("background", "rgb(255, 204, 102)")
-    .transition().duration(2000)
-    .style("background", "white");
+  //location = id;
+  var $id = $(id)
+
+  $('html, body').animate({
+      scrollTop: $id.offset().top
+  }, 500);
+    
+  $id.addClass("shake");
+  setTimeout(function(){
+    $id.removeClass("shake");
+  },500);
 }
+
+window.onscroll = function(){
+  console.log($('.thumbnail').withinviewport());
+};
