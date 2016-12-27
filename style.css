@@ -99,9 +99,27 @@ svg.main{
 }
 path.connector{
   pointer-event: none;
+  opacity: 0.3;
+  stroke-width: 1;
 }
 svg.main g.main-group{
   cursor: pointer;
+  opacity: 0.5;
+}
+svg.main g.main-group:hover,
+svg.main g.main-group.hover{
+  opacity: 1;
+  fill: black !important;
+  stroke: black !important;
+}
+svg.main g.main-group:hover path.connector,
+svg.main g.main-group.hover path.connector{
+  opacity: 1;
+  stroke: black !important;
+}
+svg.main g.main-group.dead{
+  fill: grey;
+  stroke: grey;
 }
 
 /*layout*/
@@ -151,7 +169,7 @@ body{
     transform: translate3d(0, 0, 0);
   }
   .thumbnail.dead>*{
-    opacity: 0.3;
+    opacity: 0.4;
   }
 
   .thumbnail svg{
@@ -174,7 +192,7 @@ body{
   }
   .thumbnail.dead .middle-grade .value,
   .thumbnail.dead header h2 {
-    color: gray !important;
+    color: black !important;
   }
   .thumbnail.dead header h2:after{
     content: " (закрыт)";

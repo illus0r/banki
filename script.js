@@ -174,17 +174,13 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
           .data(dataNested)
           .enter()
           .append("g")
-          .attr("class", "main-group")
+          .classed("main-group", true)
+          .classed("dead", function(d){return !d.isLive;})
           .attr("id", function(d) { return "group"+d.key; })
-          .attr("fill",   function(d){return d.isLive? cScale(cValue(d.values[0])) : "silver";})
-          .attr("stroke", function(d){return d.isLive? cScale(cValue(d.values[0])) : "silver";})
-          .attr("stroke-width", 0.5)
+          .attr("fill",   function(d){return cScale(cValue(d.values[0]))})
+          .attr("stroke", function(d){return cScale(cValue(d.values[0]))})
           .on('mouseover', function(d){
-            var nodeSelection = d3.select(this).style({
-              opacity: 1.0,
-              fill: "black",
-              stroke: "black"
-            });
+            var nodeSelection = d3.select(this).classed("hover", true);
             var id = "#thumbnail-"+d.key;
             var $id = $(id).addClass("hover");
           })
@@ -193,11 +189,7 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
             showBank(d.key);
           })
           .on('mouseout', function(d){
-            var nodeSelection = d3.select(this).style({
-              opacity: 0.3,
-              fill: null,
-              stroke: null
-            });
+            var nodeSelection = d3.select(this).classed("hover", false);
             var id = "#thumbnail-"+d.key;
             var $id = $(id).removeClass("hover");
           });
@@ -207,7 +199,7 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         .enter()
         .append("path")
         .attr("class", "connector")
-        .attr("opacity", "0.3")
+        //.attr("opacity", "0.9")
         .attr("d", function(d){return line(d.values);})
         .attr("fill", "none");
       
@@ -289,20 +281,10 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         .attr("class", function(d){return d.isLive? "live" : "dead";})
         .classed("thumbnail", true)
         .on('mouseover', function(d){
-          var mainGraph = d3.select("#group"+d.key.toString())
-          .style({
-            stroke:'black',
-            "stroke-width": 1,
-            opacity: 1
-          })
+          var mainGraph = d3.select("#group"+d.key.toString()).classed("hover", true);
         })
         .on('mouseout', function(d){
-          var mainGraph = d3.select("#group"+d.key.toString())
-          .style({
-            opacity: 0.3,
-            fill: null,
-            stroke: null
-          });
+          var mainGraph = d3.select("#group"+d.key.toString()).classed("hover", false);
         });
 
       var thumbnailSvg = thumbnailDiv.append("svg")
@@ -408,7 +390,7 @@ function showBank(key){
   var $id = $(id)
 
   $('html, body').animate({
-      scrollTop: $id.offset().top
+      scrollTop: $id.offset().top - 280
   }, 500);//, function(){
     //$id.addClass("shake");
     //setTimeout(function(){
