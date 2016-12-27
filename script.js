@@ -16,7 +16,7 @@ var xValue = function(d) { return d.date;}, // data -> value
     xScale = d3.time.scale().range([0, svgMainSize.width]), // value -> display
     xAxis = d3.svg.axis().scale(xScale).orient("bottom");
 var yValueResponses = function(d) { return d.responseCountIncrease;}, // data -> value
-    yScaleResponses = d3.scale.linear().range([svgMainSize.height, svgMainSize.height - 50]); // value -> display
+    yScaleResponses = d3.scale.linear().range([0, 15]); // value -> display
     yAxisResponses = d3.svg.axis().scale(yScaleResponses).orient("left").ticks(1);
 
 //var oValue = function(d) { return d.date;}, // data -> value
@@ -204,7 +204,20 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         .attr("fill", "none");
       
       var pointWidth = xScale(dateFormat("2000-01-07")) - xScale(dateFormat("2000-01-01"));
-      var pointHeight = 1;
+      var responses = group
+          .append("g")
+          .attr("display", "none")
+          .attr("class", "responses")
+          .selectAll("rect")
+          .data(function(d){return d.values;})
+          .enter()
+          .append("rect")
+          .attr("x", function(d){return xScale(xValue(d)) - pointWidth/2;})
+          .attr("y", function(d){return yScale(yValue(d)) - yScaleResponses(yValueResponses(d))/2;})
+          .attr("width", pointWidth)
+          .attr("height", function(d){return yScaleResponses(yValueResponses(d));});
+
+      var pointHeight = 0.5;
       var points = group
           .append("g")
           .attr("display", "none")
@@ -372,11 +385,11 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         .text( function(d){return "кредитам "+d.credits.toFixed(1).replace(".", ",");});
 
       $(window).on("load resize scroll",function(e){
-        $("g.main-group g.points").hide();
+        $("g.main-group").removeClass("within-viewport");
         thumbnailsInViewport = $('.thumbnail')
           .withinviewport({sides: "top bottom", top: -110, bottom: -100});
         thumbnailsInViewport.each( function(){
-          $("svg #group"+$(this).data("id")+" g.points").show();
+          $("svg #group"+$(this).data("id")).addClass("within-viewport");
         });
       });
     });
