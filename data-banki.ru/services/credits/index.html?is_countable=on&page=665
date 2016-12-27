@@ -1,0 +1,4097 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="env-no-js ie6 lte-ie9 lte-ie8 lte-ie7" prefix="ya: http://webmaster.yandex.ru/vocabularies/
+og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"><![endif]-->
+<!--[if IE 7]><html class="env-no-js ie7 lte-ie9 lte-ie8 lte-ie7" prefix="ya: http://webmaster.yandex.ru/vocabularies/
+og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"><![endif]-->
+<!--[if IE 8]><html class="env-no-js ie8 lte-ie9 lte-ie8" prefix="ya: http://webmaster.yandex.ru/vocabularies/
+og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"><![endif]-->
+<!--[if IE 9]><html class="env-no-js ie9 gte-ie9 lte-ie9" prefix="ya: http://webmaster.yandex.ru/vocabularies/
+og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"><![endif]-->
+<!--[if gt IE 9]><!--><html class="env-no-js gte-ie9" prefix="ya: http://webmaster.yandex.ru/vocabularies/
+og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"><!--<![endif]-->
+	<head >
+				
+				<title>Отзывы о потребительских кредитах | Банки.ру</title>
+		<meta name="keywords" content="отзывы о потребительских кредитах" />
+<meta name="description" content="Положительные и негативные отзывы клиентов о потребительских кредитах банков. Оставьте собственное мнение" />
+<meta name="robots" content="index, follow" />
+<meta property="fb:app_id" content="243196695801552" />
+<meta property="og:site_name" content="Банки.ру" />
+<meta property="og:description" content="Банки.ру &mdash; сайт о вкладах и банках. Уникальная база данных по вкладам с поисковой системой. Всегда свежие новости по банковской и экономической теме." />
+<meta property="og:image" content="//www.banki.ru/com/sign_facebook.jpg" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<link rel="canonical" href="http://www.banki.ru/services/responses/list/product/credits/"/>
+
+		
+
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+				
+		<!--[if lt IE 9]>
+		<script src="/static/common/bower/html5shiv/dist/html5shiv.js"></script>
+		<script src="/static/common/bower/es5-shim/es5-shim.min.js"></script>
+		<script src="/static/common/bower/es5-shim/es5-sham.min.js"></script>
+		<![endif]-->
+
+		<link href="//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic" rel="stylesheet" type="text/css">
+				<!--[if lte IE 8]>
+		<link href="//fonts.googleapis.com/css?family=PT+Sans:400&subset=latin,cyrillic-ext,latin-ext,cyrillic" rel="stylesheet" type="text/css">
+		<link href="//fonts.googleapis.com/css?family=PT+Sans:700&subset=latin,cyrillic-ext,latin-ext,cyrillic" rel="stylesheet" type="text/css">
+		<link href="//fonts.googleapis.com/css?family=PT+Sans:400italic&subset=latin,cyrillic-ext,latin-ext,cyrillic" rel="stylesheet" type="text/css">
+		<link href="//fonts.googleapis.com/css?family=PT+Sans:700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic" rel="stylesheet" type="text/css">
+		<![endif]-->
+
+		<link href="//fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet" type="text/css">
+		<!--[if lte IE 8]>
+		<link href="//fonts.googleapis.com/css?family=PT+Serif:400&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet" type="text/css">
+		<link href="//fonts.googleapis.com/css?family=PT+Serif:700&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet" type="text/css">
+		<link href="//fonts.googleapis.com/css?family=PT+Serif:400i&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet" type="text/css">
+		<link href="//fonts.googleapis.com/css?family=PT+Serif:700i&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet" type="text/css">
+		<![endif]-->
+
+		<link rel="stylesheet" href="/static/common/bankiru-layout.css?_v=0bd16f6ce8">
+		<link rel="stylesheet" href="/static/common/common.css?_v=5770d0f4e8">
+		<link rel="stylesheet" href="/main-bitrix.css"> 
+		
+		<script src="/static/common/main-head.js?_v=d8edd85bcc"></script>
+
+		<script>
+	var banki = {
+		ui: {},
+		utils: {},
+		modules: {},
+		env: {
+			devMode: false,
+			browser: {},
+			isModernDesign: true,
+			isLocalStorage: typeof(Modernizr) !== 'undefined' && Modernizr.localstorage,
+			time: 1482777021000, // current timestamp in milliseconds
+			timezoneOffset: 10800000,
+			isMobileMode: false,
+			isMobileDevice: false,
+			getIsSmallScreen: function() {
+				var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+				var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+				return (width + height) < 1200;
+			},
+		},
+			};
+</script>
+
+<!--[if IE]>
+	<script>
+		banki.env.browser.name = 'ie';
+	</script>
+<![endif]-->
+
+<!--[if lte IE 6]>
+	<script>
+		banki.env.browser.version = 6;
+	</script>
+<![endif]-->
+
+<!--[if IE 7]>
+	<script>
+		banki.env.browser.version = 7;
+	</script>
+<![endif]-->
+
+<!--[if IE 8]>
+	<script>
+		banki.env.browser.version = 8;
+	</script>
+<![endif]-->
+
+<!--[if IE 9]>
+	<script>
+		banki.env.browser.version = 9;
+	</script>
+<![endif]-->
+
+<!--[if IE 10]>
+	<script>
+		banki.env.browser.version = 10;
+	</script>
+<![endif]-->
+		<script>
+	banki.utils.domReady = (function() {
+		var funcArray = [];
+		var devMode = banki.env.devMode;
+
+		return {
+			push: function(callback) {
+				funcArray.push(callback);
+			},
+			run: function() {
+				this.runCount++;
+				while (funcArray.length > 0) {
+					(function() {
+						var func = funcArray.shift(),
+							start, end, delta;
+
+						if (typeof func === 'function') {
+							setTimeout(function() {
+								start = new Date();
+								func();
+								end = new Date();
+								delta = end - start;
+								if (devMode && delta > 100) {
+									console.warn(func, delta + ' мс');
+								}
+							}, 0);
+						}
+					})();
+				}
+			},
+			runCount: 0
+		}
+	})();
+</script>
+			<link rel="stylesheet" href="/static/bundles/Ratings/BaseRating/rating-bundle.css?_v=56a97057d7" />
+
+		<meta name="apple-itunes-app" content="app-id=597405601">
+
+		
+		<script>
+			if (navigator.userAgent.indexOf("WebKit") != -1) {
+				document.querySelector('html').classList.add('env-webkit');
+			}
+		</script>
+
+				<script type="text/javascript">
+			(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=WgaM98lfd*FgGwsbMiRvKP0u3UZ6PjrmwB*/9v/OOWBErrmWf0LAjZeCZ*frwdYz5k29zp1ipR6CXeHaFSsI2iET3okKWvghZGSFj5bExk8H0g1*eYJq6XFiRvdAmzi6P1eE3afwLHfW2BdUKuDQeOMEJpUJapQ6W5YCgA8LDMw-';
+		</script>
+		<!-- 3941804 -->
+	</head>
+	<body class="modern-design">
+					<script src="/_lib/before_ga.js"></script>
+<script>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-208343-2']);
+	_gaq.push(['_setCampaignCookieTimeout', 0]);
+	_gaq.push(['_setCustomVar', 1, 'siteDesign', 'new', 1]);
+	_gaq.push(['_trackPageview']);
+	_gaq.push(ic__eventQuickChangeSource);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+	(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	ga('create', 'UA-38591118-1');
+	ga('require', 'displayfeatures');
+	ga('send', 'pageview');
+</script>
+<!-- tns-counter.ru -->
+<script type="text/javascript">
+	(function(win, doc, cb){
+		(win[cb] = win[cb] || []).push(function() {
+			try {
+				tnsCounterBanki_ru = new TNS.TnsCounter({
+					'account':'banki_ru',
+					'tmsec': 'banki_total'
+				});
+			} catch(e){}
+		});
+
+		var tnsscript = doc.createElement('script');
+		tnsscript.type = 'text/javascript';
+		tnsscript.async = true;
+		tnsscript.src = ('https:' == doc.location.protocol ? 'https:' : 'http:') +
+				'//www.tns-counter.ru/tcounter.js';
+		var s = doc.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(tnsscript, s);
+	})(window, this.document,'tnscounter_callback');
+</script>
+<noscript>
+	<img src="//www.tns-counter.ru/V13a****banki_ru/ru/UTF-8/tmsec=banki_total/" width="0" height="0" alt="" />
+</noscript>
+<!--/ tns-counter.ru -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+	(function (d, w, c) {
+		(w[c] = w[c] || []).push(function() {
+			try {
+				w.yaCounter502212 = new Ya.Metrika({id:502212, enableAll: true, webvisor:true});
+			} catch(e) { }
+		});
+
+		var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function () { n.parentNode.insertBefore(s, n); };
+		s.type = "text/javascript";
+		s.async = true;
+		s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f);
+		} else { f(); }
+	})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/502212" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<script> 	(function() {
+		var _fbq = window._fbq || (window._fbq = []);
+		if (!_fbq.loaded) {
+			var fbds = document.createElement('script');
+			fbds.async = true;
+			fbds.src = '//connect.facebook.net/en_US/fbds.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(fbds, s);
+			_fbq.loaded = true;
+		}
+		_fbq.push(['addPixelId', '746216208747246']);
+	})();
+	window._fbq = window._fbq || [];
+	window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=746216208747246&amp;ev=PixelInitialized" /></noscript>		
+		<div class="bitrix-component"
+	data-name="custom:advertising.block"
+	data-template="background"
+	data-params='{&quot;BANNER_TYPE&quot;:&quot;Background_Full&quot;,&quot;CODE&quot;:&quot;Banner&quot;}'
+	data-group="banners"
+		></div>
+
+		<header class="header">
+	<noscript>
+		<div class="layout-wrapper ui-alert ui-alert--danger">
+			<span class="ui-alert__icon alert-icon alert-icon--danger"></span>
+			Внимание! В вашем браузере отключено выполнение JavaScript. Возможно неоптимальное отображения ряда элементов сайта и недоступность удобного функционала.
+		</div>
+	</noscript>
+
+	<!--[if lt IE 9]>
+		<div class="layout-wrapper ui-alert ui-alert--danger">
+			<span class="ui-alert__icon alert-icon alert-icon--danger"></span>
+			Вы используете устаревший браузер. Возможна некорректная работа функционала.
+		</div>
+	<![endif]-->
+
+	<div class="bitrix-component"
+	data-name="custom:advertising.block"
+	data-template="branding-hor-rotation"
+	data-params='{&quot;BANNER_TYPE&quot;:&quot;branding&quot;,&quot;CODE&quot;:&quot;top_rotation&quot;}'
+	data-group="banners"
+				data-init-inner-modules="1"
+			></div>
+
+	<div class="bitrix-component"
+	data-name="custom:advertising.block"
+	data-template="header"
+	data-params='{&quot;BANNER_TYPE&quot;:&quot;allpages&quot;,&quot;CODE&quot;:&quot;top&quot;}'
+	data-group="banners"
+		></div>
+
+	<div class="bitrix-component"
+	data-name="custom:advertising.block"
+	data-template="branding_wall"
+	data-params='{&quot;BANNER_TYPE&quot;:&quot;Branding_Wall&quot;,&quot;CODE&quot;:&quot;Banner&quot;}'
+	data-group="banners"
+				data-init-inner-modules="1"
+			></div>
+
+	<div class="padding-bottom-x-small">
+		<div class="header__bar">
+			<div class="layout-wrapper">
+				<div class="header__menu">
+					<ul class="header__menu__left">
+						<li class="menu__item js-menu__item" data-test="header-select-region">
+			<div class="item__node item__node--extended">
+			<span class="pseudo-link color-text">Волгоград</span>
+		</div>
+	
+	<script type="text/html">
+		<ul class="item__spoiler">
+			<div class="header-select-region"
+				 data-module="/static/common/banki.ru/layout/header/header-select-region/header-select-region.js"
+				 data-current-region-id="292"
+				 data-product-type=""
+				 data-ajax-url="/ajax/widget.php?widget=App\Widgets\Common\RegionSelector\RegionSelector&amp;type=city"
+				 data-widget-ajax-request="false">
+
+				<ul class="header-select-region__list">
+					<li class="header-select-region__list-item js-header-select-region"
+						data-region-id="4">Москва</li>
+
+					<li class="header-select-region__list-item js-header-select-region"
+						data-region-id="211">Санкт-Петербург</li>
+				</ul>
+
+				<input class="header-select-region__input" type="text" placeholder="Выберите другой город" id="header-region-autocomplete" autocomplete="off" value="">
+
+				<ul class="header-select-region__list header-select-region__list--overflow ui-loading-overlay" id="header-region-list"></ul>
+
+				<div class="header-select-region__all js-header-select-region" data-region-id="1">Вся Россия</div>
+			</div>
+		</ul>
+	</script>
+</li>
+
+						<li class="menu__item js-menu__item">
+							<div class="item__node item__node--extended">
+								<span class="pseudo-link color-text">EN</span>
+							</div>
+
+							<script type="text/html">
+								<ul class="item__spoiler">
+									<li class="spoiler__item">
+										<a href="/news/engnews/">Banking news</a>
+									</li>
+
+									<li class="spoiler__item">
+										<a href="/banks/ratings/?LANG=en">Russian banks</a>
+									</li>
+								</ul>
+							</script>
+						</li>
+
+						<li class="menu__item js-menu__item">
+							<div class="item__node item__node--extended">
+								<span class="pseudo-link color-text">Наши&nbsp;проекты</span>
+							</div>
+
+							<script type="text/html">
+								<ul class="item__spoiler item__spoiler--width">
+									<li class="spoiler__item">
+										<a class="link-with-icon" href="//infobank.by/" target="_blank" rel="nofollow">
+											<i class="icon-infobankby va-bottom"></i>
+											<span class="link-with-icon__text">Infobank.by</span>
+										</a>
+									</li>
+
+									<li class="spoiler__item">
+										<a class="link-with-icon" href="//www.allbanks.ru/" target="_blank" rel="nofollow">
+											<i class="icon-allbanksru va-bottom"></i>
+											<span class="link-with-icon__text">Allbanks.ru</span>
+										</a>
+									</li>
+
+									<li class="spoiler__item">
+										<a class="link-with-icon" href="http://finparty.ru/" target="_blank" rel="nofollow">
+											<i class="icon-finparty va-bottom"></i>
+											<span class="link-with-icon__text">Finparty.ru</span>
+										</a>
+									</li>
+
+									<li class="spoiler__item">
+										<a class="link-with-icon" href="http://bankir.ru/" target="_blank" rel="nofollow">
+											<i class="icon-bankir-ru va-bottom"></i>
+											<span class="link-with-icon__text">Bankir.ru</span>
+										</a>
+									</li>
+
+									<li class="spoiler__item">
+										<a class="link-with-icon" href="http://mycreditinfo.ru/" target="_blank" rel="nofollow">
+											<img class="link-with-icon__icon va-bottom" src="//mycreditinfo.ru/fav_mycredit.ico" alt="" />
+											<span class="link-with-icon__text">Mycreditinfo.ru</span>
+										</a>
+									</li>
+								</ul>
+							</script>
+						</li>
+
+						<li class="menu__item js-menu__item">
+							<div class="item__node item__node--extended">
+								<i class="icon-font icon-facebook color-gray-gray font-size-default"></i>
+							</div>
+
+							<script type="text/html">
+								<div class="item__spoiler">
+									<a href="//www.facebook.com/banki.ru" class="link-with-icon spoiler__item">
+										<span class="link-with-icon__icon icon-font icon-facebook color-facebook"></span>
+										<span rel="nofollow" target="_blank" class="link-with-icon__text va-middle">Facebook</span>
+									</a>
+
+									<a href="//twitter.com/banki_ru" class="link-with-icon spoiler__item">
+										<span class="link-with-icon__icon icon-font icon-twitter color-bright-sky-blue"></span>
+										<span rel="nofollow" target="_blank" class="link-with-icon__text va-middle">Twitter</span>
+									</a>
+
+									<a href="//vk.com/club17032179" class="link-with-icon spoiler__item">
+										<span class="link-with-icon__icon icon-font icon-vk color-vk"></span>
+										<span rel="nofollow" target="_blank" class="link-with-icon__text">Вконтакте</span>
+									</a>
+
+									<a href="//www.youtube.com/BankiRu" class="link-with-icon spoiler__item">
+										<span class="link-with-icon__icon icon-font icon-youtube-24 font-size-medium color-red"></span>
+										<span rel="nofollow" target="_blank" class="link-with-icon__text">Youtube</span>
+									</a>
+
+									<a href="//www.telegram.me/banki_ru_bot" class="link-with-icon spoiler__item">
+										<span class="link-with-icon__icon icon-font icon-telegram font-size-medium color-telegram"></span>
+										<span rel="nofollow" target="_blank" class="link-with-icon__text">Telegram</span>
+									</a>
+								</div>
+							</script>
+						</li>
+
+						<li class="menu__item header__menu__clocks">
+							<div class="item__node" data-module="clocks">
+								26 декабря, 21:30
+							</div>
+						</li>
+					</ul>
+
+					<ul class="header__menu__right">
+						<li class="menu__item menu__item--right">
+			<div class="item__node">
+			<a href="/auth/?type=login" class="item__call--login pseudo-link color-text" data-click="show-auth-popup">Вход</a>
+			<a class="item__call--registration pseudo-link color-text" href="/auth/?register=yes" rel="nofollow">Регистрация</a>
+		</div>
+	
+	<div class="bitrix-component" id="system-auth-form"
+		data-name="ng:system.auth.form"
+		data-template="redesign"
+		data-params="{&quot;SHOW_ERRORS&quot;:&quot;Y&quot;,&quot;BACKURL&quot;:&quot;\/services\/responses\/list\/product\/credits\/?is_countable=on&amp;page=665&quot;}"
+		data-immediately
+		data-cache="{&quot;time&quot;:60}"></div>
+
+	</li>
+							<li class="menu__item menu__item--right menu__item--last">
+		<form action="/search/" method="get" class="item__node item__node--input js-search-input-form" data-module="search-input">
+    <input type="hidden" name="utf8" value="1"/>
+
+    <div class="input-search">
+        <input type="submit" name="s" value="" class="input-search__button" />
+        <input type="search" name="q" value="" class="input-search__field" placeholder="Поиск по banki.ru" />
+    </div>
+</form>
+	</li>
+
+					</ul>
+
+					<script>
+						banki.utils.domReady.push(function() {
+							'use strict';
+
+							require(['jquery', 'layout.header-dropdown'], function($, HeaderDropdown) {
+								$('.header__menu').find('.js-menu__item').each(function() {
+									new HeaderDropdown($(this));
+								});
+							});
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__content">
+		<div class="layout-wrapper clearfix">
+			
+ 
+<div class="header__logo-container">
+	<a href="/" class="header__logo" title="banki.ru &bull; информационный портал">
+					<img class="header__logo__img" src="/static/common/common/img/bankiru-logo.png?_v=afd59ef84c" alt="banki.ru" />
+			</a>
+</div>
+
+
+			<div class="header__center-banner header__banner">
+									<div class="bitrix-component"
+	data-name="custom:advertising.block"
+	data-template="blank"
+	data-params='{&quot;BANNER_TYPE&quot;:&quot;allpages&quot;,&quot;CODE&quot;:&quot;html_top2&quot;}'
+	data-group="banners"
+		></div>
+							</div>
+
+			<div class="header__right-banner header__banner">
+				<div class="bitrix-component"
+	data-name="custom:advertising.block"
+	data-template="blank"
+	data-params='{&quot;BANNER_TYPE&quot;:&quot;allpages&quot;,&quot;CODE&quot;:&quot;html_top&quot;}'
+	data-group="banners"
+		></div>
+			</div>
+		</div>
+	</div>
+</header>
+
+	<section class="layout-wrapper position-relative margin-bottom-default">
+
+<nav class="main-menu" id="main-menu">
+	<div class="main-menu__controls">
+		<div class="main-menu__tabs">
+							<a href="/" class="tabs__item tabs__item--bank tabs__item--active"
+				   data-event="no-bubble" data-section-link="bank">
+					<span class="tabs__item-icon icon-font icon-bank"></span>
+					Банки
+									</a>
+							<a href="/insurance/" class="tabs__item tabs__item--insurance"
+				   data-event="no-bubble" data-section-link="insurance">
+					<span class="tabs__item-icon icon-font icon-insurance-16"></span>
+					Страхование
+									</a>
+							<a href="/telecom/" class="tabs__item tabs__item--telecom"
+				   data-event="no-bubble" data-section-link="telecom">
+					<span class="tabs__item-icon icon-font icon-mobile-16"></span>
+					Мобильная связь и интернет
+									</a>
+							<a href="/investment/" class="tabs__item tabs__item--investment"
+				   data-event="no-bubble" data-section-link="investment">
+					<span class="tabs__item-icon icon-font icon-investment"></span>
+					Инвестиции
+					<span class="label-beta">&beta;eta</span>				</a>
+					</div>
+	</div>
+
+	<div class="main-menu__nav-wrapper main-menu__nav-wrapper--with-full-state">
+					<nav class="main-menu__nav main-menu__nav--bank" data-section="bank">
+									<div class="nav__section nav__section--news">
+						<span class="section__title">Новости</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/news/" data-event="no-bubble"
+																								>Все события дня</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/news/lenta/" data-event="no-bubble"
+																								>Лента новостей</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/news/bankpress/" data-event="no-bubble"
+																								>Обзор прессы</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/news/video/" data-event="no-bubble"
+																								>Видео</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/news/stars/" data-event="no-bubble"
+																								>Звезды в банке</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/news/daytheme/" data-event="no-bubble"
+																								>Тема дня</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/news/lenta/main/" data-event="no-bubble"
+																								>Главные новости</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/news/story/" data-event="no-bubble"
+																								>Сюжеты</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/news/interview/" data-event="no-bubble"
+																								>Интервью</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/news/proetcontra/" data-event="no-bubble"
+																								>Спорный момент</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/news/pressreleases/" data-event="no-bubble"
+																								>Пресс-релизы</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/news/research/" data-event="no-bubble"
+																								>Исследования</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/news/research/?author=3737027" data-event="no-bubble"
+																								>Аналитика</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/news/columnists/" data-event="no-bubble"
+																								onClick="_gaq.push(['_trackEvent', 'mainmenu', 'click', 'columnists']);">Мнение</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/wikibank/" data-event="no-bubble"
+																								onClick="_gaq.push(['_trackEvent', 'mainmenu', 'click', 'wikibank']);">Банковский словарь</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/products/currency/cb/" data-event="no-bubble"
+																								onClick="_gaq.push(['_trackEvent', 'mainmenu', 'click', 'cb']);">Курсы ЦБ</a></li>													</ul>
+					</div>
+									<div class="nav__section nav__section--banks">
+						<span class="section__title">Банки и компании</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/banks/volgograd/" data-event="no-bubble"
+																								>Банки Волгограда</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/banks/" data-event="no-bubble"
+																								onClick="_gaq.push(['_trackEvent', 'mainmenu', 'click', 'banks']);">Банки России</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/microloans/companies/" data-event="no-bubble"
+																								>Микрофинансовые организации</a></li>															<li class="list__item
+										
+										
+										
+										"
+										 title="Национальная платежная карта «Мир»"><a class="list__link" href="/mir/" data-event="no-bubble"
+																								>Национальная платежная карта «Мир»</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/banks/map/" data-event="no-bubble"
+																								onClick="_gaq.push(['_trackEvent', 'mainmenu', 'click', 'map']);">Банки на карте</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/banks/memory/" data-event="no-bubble"
+																								>Книга памяти</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="http://www.allbanks.ru/" data-event="no-bubble"
+																								>Все банки России на Allbanks.ru</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										list__item--margin-bottom"
+										><a class="list__link" href="/bki/" data-event="no-bubble"
+																								>Бюро кредитных историй</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/banks/vacancy/" data-event="no-bubble"
+																								>Вакансии банков</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/banks/vacancy/resumes/" data-event="no-bubble"
+																								>Резюме специалистов</a></li>													</ul>
+					</div>
+									<div class="nav__section nav__section--products">
+						<span class="section__title">Продукты и услуги</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/products/deposits/" data-event="no-bubble"
+																								onClick="_gaq.push(['_trackEvent', 'mainmenu', 'click', 'deposits']);">Вклады</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/products/credits/" data-event="no-bubble"
+																								onClick="_gaq.push(['_trackEvent', 'mainmenu', 'click', 'credits']);">Потребительские кредиты</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/specials/" data-event="no-bubble"
+																								onClick="_gaq.push(['_trackEvent', 'mainmenu', 'click', 'lenta']);">Специальные предложения</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/products/debitcards/" data-event="no-bubble"
+																								>Дебетовые карты</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/products/creditcards/" data-event="no-bubble"
+																								>Кредитные карты</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/microloans/" data-event="no-bubble"
+																								>Микрозаймы</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/products/recommended/" data-event="no-bubble"
+																								>Предложения месяца</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/bankloto/" data-event="no-bubble"
+																								onClick="_gaq.push(['_trackEvent', 'mainmenu', 'click', 'bankloto']);">БанкЛото</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/products/hypothec/" data-event="no-bubble"
+																								onClick="_gaq.push(['_trackEvent', 'mainmenu', 'click', 'hypothec']);">Ипотека</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/products/autocredits/" data-event="no-bubble"
+																								onClick="_gaq.push(['_trackEvent', 'mainmenu', 'click', 'autocredits']);">Автокредиты</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/products/businesscredits/" data-event="no-bubble"
+																								>Кредиты для бизнеса</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/products/corporate/" data-event="no-bubble"
+																								>Депозиты юрлиц</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/products/restructing/" data-event="no-bubble"
+																								>Реструктуризация кредитов</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/products/currency/" data-event="no-bubble"
+																								>Курсы обмена валют</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/products/leasing/" data-event="no-bubble"
+																								>Лизинг</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										list__item--margin-bottom"
+										><a class="list__link" href="/services/cardsdesign/" data-event="no-bubble"
+																								>Дизайн пластиковых карт</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/services/calculators/deposits/" data-event="no-bubble"
+																								>Калькулятор вкладов</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/services/calculators/credits/" data-event="no-bubble"
+																								>Кредитный калькулятор</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/services/calculators/autocredits/" data-event="no-bubble"
+																								>Автокредитный калькулятор</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/services/calculators/hypothec/" data-event="no-bubble"
+																								>Ипотечный калькулятор</a></li>													</ul>
+					</div>
+									<div class="nav__section nav__section--ratings">
+						<span class="section__title">Рейтинги</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/services/responses/" data-event="no-bubble"
+																								onClick="_gaq.push(['_trackEvent', 'mainmenu', 'click', 'responses']);">Народный рейтинг</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/banks/ratings/" data-event="no-bubble"
+																								>Финансовые показатели</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/banks/ratings/agency/" data-event="no-bubble"
+																								>Кредитные рейтинги</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/services/official/" data-event="no-bubble"
+																								>Служебный рейтинг</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/services/remote/" data-event="no-bubble"
+																								>Рейтинг интернет-банков</a></li>													</ul>
+					</div>
+									<div class="nav__section nav__section--community">
+						<span class="section__title">Общение</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/forum/" data-event="no-bubble"
+																								>Форум</a></li>															<li class="list__item
+										list__item--selected
+										
+										
+										"
+										><a class="list__link" href="/services/responses/list/" data-event="no-bubble"
+																								>Отзывы о банках</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/services/questions-answers/" data-event="no-bubble"
+																								>Вопрос — ответ</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/bankofyear/" data-event="no-bubble"
+																								>«Банк года» 2015</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/friends/" data-event="no-bubble"
+																								>Друзья банков</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/blog/" data-event="no-bubble"
+																								>Блоги</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/news/events/" data-event="no-bubble"
+																								>Мероприятия</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/services/online-interview/" data-event="no-bubble"
+																								>Онлайн-конференции</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/10_years/" data-event="no-bubble"
+																								>Банки.ру — 10 лет</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/services/banking_ads/" data-event="no-bubble"
+																								>Каталог банковской рекламы</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/services/votes/" data-event="no-bubble"
+																								>Опросы</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/services/anecdotes/" data-event="no-bubble"
+																								>Анекдоты</a></li>													</ul>
+					</div>
+									<div class="nav__section nav__section--service">
+						<span class="section__title">Сервисы</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/mycreditinfo/" data-event="no-bubble"
+																								>Кредитные истории</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/mydeposits/" data-event="no-bubble"
+																								>Мои вклады</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="https://card2card.banki.ru/" data-event="no-bubble"
+												target="_blank"												>Перевод с карты на карту</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="https://terminal.banki.ru/" data-event="no-bubble"
+												target="_blank"												>Оплата услуг онлайн</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/paycredits/" data-event="no-bubble"
+												target="_blank"												>Оплата кредита онлайн</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/unistream/" data-event="no-bubble"
+												target="_blank"												>Денежные переводы</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/depositbrocker/" data-event="no-bubble"
+																								>Депозитный брокер</a></li>													</ul>
+					</div>
+							</nav>
+					<nav class="main-menu__nav main-menu__nav--insurance is-hidden" data-section="insurance">
+									<div class="nav__section nav__section--news">
+						<span class="section__title">Новости</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/insurance/news/lenta/" data-event="no-bubble"
+																								>Лента новостей</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/insurance/news/daytheme/" data-event="no-bubble"
+																								>Тема дня</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/insurance/news/interview/" data-event="no-bubble"
+																								>Интервью</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/news/columnists/?label=insurance_advice" data-event="no-bubble"
+																								>Советы по страхованию</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/insurance/news/research/" data-event="no-bubble"
+																								>Исследования</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/insurance/news/video/" data-event="no-bubble"
+																								>Видео</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/insurance/news/pressreleases/" data-event="no-bubble"
+																								>Пресс-релизы</a></li>													</ul>
+					</div>
+									<div class="nav__section nav__section--banks">
+						<span class="section__title">Участники рынка</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/insurance/companies/" data-event="no-bubble"
+																								>Страховые компании</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/insurance/brokers/" data-event="no-bubble"
+																								>Страховые агенты и брокеры</a></li>													</ul>
+					</div>
+									<div class="nav__section nav__section--products">
+						<span class="section__title">Услуги</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/insurance/order/auto/type/kasko/" data-event="no-bubble"
+																								>Калькулятор КАСКО</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/insurance/order/auto/type/osago/" data-event="no-bubble"
+																								>Калькулятор ОСАГО</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/insurance/order/tourism/" data-event="no-bubble"
+																								>Туристическая страховка</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/insurance/order/life/" data-event="no-bubble"
+																								>Страхование жизни и здоровья</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/insurance/order/flat/" data-event="no-bubble"
+																								>Страхование квартир</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/insurance/order/house/" data-event="no-bubble"
+																								>Страхование домов</a></li>													</ul>
+					</div>
+									<div class="nav__section nav__section--ratings">
+						<span class="section__title">Рейтинги</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/insurance/responses/" data-event="no-bubble"
+																								>Народный рейтинг страховых компаний</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/insurance/ratings/" data-event="no-bubble"
+																								>Показатели страховых компаний</a></li>													</ul>
+					</div>
+									<div class="nav__section nav__section--community">
+						<span class="section__title">Общение</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/forum/?PAGE_NAME=list&amp;FID=97" data-event="no-bubble"
+																								>Форум</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/insurance/responses/list/" data-event="no-bubble"
+																								>Отзывы о страховых компаниях</a></li>													</ul>
+					</div>
+									<div class="nav__section nav__section--service">
+						<span class="section__title">Сервисы</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/insurance/check/osago/" data-event="no-bubble"
+																								>Проверка полиса ОСАГО</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/insurance/check/kbm/" data-event="no-bubble"
+																								>Проверка скидки за безаварийное вождение </a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/insurance/check/vehicle/" data-event="no-bubble"
+																								>Проверка данных ТС по номеру ОСАГО</a></li>															<li class="list__item
+										
+										list__item--full
+										
+										"
+										><a class="list__link" href="/insurance/check/policy/" data-event="no-bubble"
+																								>Проверка наличия ОСАГО по данным ТС</a></li>													</ul>
+					</div>
+							</nav>
+					<nav class="main-menu__nav main-menu__nav--telecom is-hidden" data-section="telecom">
+									<div class="nav__section nav__section--news">
+						<span class="section__title">Новости</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/telecom/news/lenta/" data-event="no-bubble"
+																								>Лента новостей</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/telecom/news/daytheme/" data-event="no-bubble"
+																								>Тема дня</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/telecom/news/interview/" data-event="no-bubble"
+																								>Интервью</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/news/columnists/?label=telecom_blog" data-event="no-bubble"
+																								>Мнение</a></li>													</ul>
+					</div>
+									<div class="nav__section nav__section--banks">
+						<span class="section__title">Компании</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/telecom/companies/cellular/volgograd/" data-event="no-bubble"
+																								>Сотовые операторы</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/telecom/companies/internetproviders/volgograd/" data-event="no-bubble"
+																								>Интернет-провайдеры</a></li>													</ul>
+					</div>
+									<div class="nav__section nav__section--products">
+						<span class="section__title">Услуги</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/telecom/tarif/" data-event="no-bubble"
+																								>Анализ сотового тарифа</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/telecom/cellular/search/volgograd/" data-event="no-bubble"
+																								>Подбор сотового тарифа</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/telecom/homeinternet/volgograd/" data-event="no-bubble"
+																								>Интернет домой</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/telecom/countryinternet/" data-event="no-bubble"
+																								>Интернет на дачу</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/telecom/devices/search/volgograd/" data-event="no-bubble"
+																								>Оборудование</a></li>													</ul>
+					</div>
+									<div class="nav__section nav__section--ratings">
+						<span class="section__title">Рейтинги</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/telecom/responses/" data-event="no-bubble"
+																								>Народный рейтинг сотовых операторов</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/telecom/responses/providers/" data-event="no-bubble"
+																								>Народный рейтинг интернет-провайдеров</a></li>													</ul>
+					</div>
+									<div class="nav__section nav__section--community">
+						<span class="section__title">Общение</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/forum/?PAGE_NAME=forums&amp;GID=11" data-event="no-bubble"
+																								>Форум</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/telecom/responses/list/mobile/" data-event="no-bubble"
+																								>Отзывы о сотовых операторах</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/telecom/responses/list/internet/" data-event="no-bubble"
+																								>Отзывы об интернет-провайдерах</a></li>													</ul>
+					</div>
+									<div class="nav__section nav__section--service">
+						<span class="section__title">Сервисы</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/telecom/tarif/" data-event="no-bubble"
+																								>Анализ вашего сотового тарифа</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/telecom/speedtest/" data-event="no-bubble"
+																								>Проверка скорости интернета</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/telecom/tarifer/" data-event="no-bubble"
+																								>Оптимизация корпоративной связи</a></li>													</ul>
+					</div>
+							</nav>
+					<nav class="main-menu__nav main-menu__nav--investment is-hidden" data-section="investment">
+									<div class="nav__section nav__section--news">
+						<span class="section__title">Новости</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/investment/news/lenta/" data-event="no-bubble"
+																								>Лента новостей</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/investment/news/daytheme/" data-event="no-bubble"
+																								>Тема дня</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/news/columnists/?label=investment" data-event="no-bubble"
+																								>Мнение</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/investment/news/interview/" data-event="no-bubble"
+																								>Интервью</a></li>													</ul>
+					</div>
+									<div class="nav__section nav__section--banks">
+						<span class="section__title">Компании</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/investment/brokers/" data-event="no-bubble"
+																								>Биржевые брокеры</a></li>													</ul>
+					</div>
+									<div class="nav__section nav__section--products">
+						<span class="section__title">Продукты</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/investment/search/share/" data-event="no-bubble"
+																								>Акции</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/investment/search/rubond/" data-event="no-bubble"
+																								>Облигации</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/investment/search/eurobond/" data-event="no-bubble"
+																								>Еврооблигации</a></li>															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/investment/iia/" data-event="no-bubble"
+																								>Индивидуальный инвестиционный счет</a></li>													</ul>
+					</div>
+									<div class="nav__section nav__section--community">
+						<span class="section__title">Общение</span>
+						<ul class="section__list">
+															<li class="list__item
+										
+										
+										
+										"
+										><a class="list__link" href="/forum/?PAGE_NAME=list&amp;FID=21" data-event="no-bubble"
+																								>Форум</a></li>													</ul>
+					</div>
+							</nav>
+		
+					<div class="v-margins-x-small is-center main-menu__full-state-toggle__container">
+				<span class="main-menu__full-state-toggler">
+					<span class="full-state-toggler__icon-open icon-font icon-down-circled"></span>
+					<span class="full-state-toggler__icon-close icon-font icon-up-circled"></span>
+				</span>
+			</div>
+			</div>
+</nav>
+
+<script>
+	banki.utils.domReady.push(function() {
+		if (banki.env.isMobileMode) {
+			require(['mainMenuMobile'], function(mainMobileMenu) {
+				new mainMobileMenu();
+			});
+		} else {
+			require(['mainMenu'], function(mainMenu) {
+				new mainMenu();
+			});
+		}
+	});
+</script>
+
+	</section>
+
+
+					<div class="layout-wrapper padding-top-default border-default bg-white" style="display: block;">
+					<div class="layout-columns-wrapper">
+		<main class="layout-column-center">
+			<div class="display-flex">
+				<div class="overflow-hidden" style="flex: 1">
+																		
+					<nav class="bread-crumbs" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+							<a class="bread-crumbs__item bread-crumbs__item--first" href="/" title="Главная страница" itemprop="url">
+					<span itemprop="title">Главная</span>
+				</a>
+			
+												<span class="bread-crumbs__item bread-crumbs__item--separator">&bull;</span>
+				
+									<span class="bread-crumbs__item" itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+						<a href="/services/responses/" itemprop="url">
+							<span itemprop="title">Народный рейтинг банков</span>
+						</a>
+					</span>
+				
+												<span class="bread-crumbs__item bread-crumbs__item--separator">&bull;</span>
+				
+									<span class="bread-crumbs__item" itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+						<span itemprop="title">Отзывы о потребительских кредитах</span> 					</span>
+				
+					</nav>
+	
+									</div>
+							</div>
+
+				<div id="responses-list-app" ng-controller="MainController">
+		<h1 class="header-h0" ng-bind="pageHeaderText">Отзывы о потребительских кредитах</h1>
+
+		<hr class="hor-content-separator" />
+
+		<div class="clearfix">
+			<div class="float-left inline-elements--small">
+				<a href="/banks/" class="button button--bordered button--small">Банки <span class="color-gray-gray">648</span></a>
+<a href="/services/responses/list/" class="button button--bordered button--small">Все отзывы <span class="color-gray-gray">296 294</span></a>
+				<a href="/services/responses/response/add/" class="button button--bordered-blue button--small">Добавить отзыв</a>
+			</div>
+		</div>
+
+		<hr class="hor-content-separator" />
+
+		<div data-responses-list-block>
+			<div data-filter class="widget widget--small-margin widget--is-loading" style="height: 100px;" ng-controller="FilterController" data-test="folkrating-responses-list-filter">
+	<div ng-controller="TabsController">
+		<div class="filter-widget font-size-medium">
+			<div class="filter-widget__col" style="width: 35%">
+				<div class="filter-widget__caption font-bold">
+					<span class="filter-widget__caption__icon icon-font icon-bubbles"></span>
+					Отзывы
+				</div>
+				<div class="filter-widget__toggler" ng-click="selectTab('category')" ng-class="{'filter-widget__toggler--selected': selectedTab == 'category'}">
+					<span ng-bind="categoriesItemsTitles[selectedCategory]"></span>
+					<span class="filter-widget__item-count" ng-bind="categoriesItemsCount[selectedCategory]"></span>
+					<span class="filter-widget__toggler__icon icon-font icon-arrow-down"></span>
+				</div>
+			</div>
+
+			<div class="filter-widget__col" style="width: 25%">
+				<div class="filter-widget__caption font-bold">
+					<span class="filter-widget__caption__icon icon-font icon-star-24"></span>
+					Оценка
+				</div>
+				<div class="filter-widget__toggler" ng-click="selectTab('rating')" ng-class="{'filter-widget__toggler--selected': selectedTab == 'rating'}">
+					<span ng-bind="selectedGradeCaption"></span>
+					<span class="filter-widget__toggler__icon icon-font icon-arrow-down"></span>
+				</div>
+			</div>
+
+			<div class="filter-widget__col" style="width: 40%">
+				<div class="filter-widget__caption font-bold">
+					<span class="filter-widget__caption__icon icon-font icon-page"></span>
+					Услуга
+				</div>
+				<div class="filter-widget__toggler" ng-click="selectTab('service-type')" ng-class="{'filter-widget__toggler--selected': selectedTab == 'service-type'}">
+					<span ng-bind="selectedService.name"></span>
+					<span class="filter-widget__item-count" ng-bind="selectedService.count"></span>
+					<span class="filter-widget__toggler__icon icon-font icon-arrow-down"></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="bubble-inline bubble-inline--turquoise" ng-show="selectedTab">
+			<div class="bubble-inline__arrow-holder">
+				
+					<span class="bubble-inline__arrow" style="margin-left: -26px; left: {{ filterArrowPosition }}%"></span>
+				
+			</div>
+
+			<div class="bubble-inline__body font-size-medium">
+				<div ng-show="selectedTab == 'category'">
+					<ul class="filter-widget__columned-list">
+						<li ng-repeat="item in categoriesItemsOrder" ng-class="{'selected-item': item == selectedCategory}">
+							<a class="cursor-pointer" ng-click="setFilterValue('type', (item == 'all') ? '' : item)">
+								<span ng-bind="categoriesItemsTitles[item]"></span>
+								<span class="filter-widget__item-count" ng-bind="categoriesItemsCount[item]"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div ng-show="selectedTab == 'rating'">
+					<div class="is-center" style="margin: 0 15%;">
+						<div class="radio-button-rating justify-grid">
+							
+								<div class="rating-grade-item" ng-repeat="(grade, title) in gradesTitles" data-add-a-space-between>
+									<div class="rating-grade rating-grade--active rating-grade--value-{{ grade }}"
+										 ng-class="{'rating-grade--selected': selectedGrade == grade}"
+										 title="{{title}}" ng-click="setFilterValue('rate', grade)" ng-bind="grade">
+									</div>
+									<span class="rating-grade-count" ng-bind="gradesCount[grade]"></span>
+								</div>
+							
+						</div>
+
+						<div class="spacer"></div>
+
+						<ul class="pseudo-tabs__items">
+							<li class="pseudo-tabs__item" ng-repeat="(key, value) in gradesLinks" ng-class="{'pseudo-tabs__item--active': selectedRateName == key}"
+								ng-click="setFilterValue('rate', gradesLinks[key])" ng-bind="gradesLinksTitles[key]"></li>
+						</ul>
+					</div>
+				</div>
+
+				<div ng-show="selectedTab == 'service-type'">
+					<ul class="filter-widget__columned-list">
+						<li ng-repeat="item in serviceTypeList" ng-class="{'selected-item': selectedServiceId == item.product_id}">
+							<a class="cursor-pointer" ng-click="setFilterValue('product', item.product_id)">
+								<span ng-bind="item.name"></span>
+								<span class="filter-widget__item-count" ng-bind="item.count"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="spacer"></div>
+
+	<div class="inline-elements font-size-medium">
+		<span class="inline-element-item" ng-controller="CitySelectorCtrl" id="city-selector">
+			Город:
+			<span class="link-with-icon ui-open-down-link" data-select>
+				<span class="pseudo-link" ng-bind="selectedCity"></span>
+				<span class="icon-font icon-arrow-down"></span>
+			</span>
+		</span>
+
+					<span class="inline-element-item" ng-controller="CompaniesSelectorCtrl">
+				Банк:
+				<span class="link-with-icon ui-open-down-link" id="company-selector">
+					<span class="pseudo-link" ng-bind="selectedCompany"></span>
+					<span class="icon-font icon-arrow-down"></span>
+				</span>
+			</span>
+		
+		<span class="inline-element-item">
+			<label>
+				<input type="checkbox" class="modern-checkbox" ng-model="isOnlyApproved" ng-change="setFilterValue('is_countable', isOnlyApproved ? 'on' : false)" />
+				<span class="checkbox-label">только зачтенные <span class="color-gray-gray" ng-bind="approvedCount"></span></span>
+			</label>
+		</span>
+	</div>
+</div>
+			<div class="v-margins padding-default bg-gray" data-responses-list>
+											<div class="responses-list">
+									
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="//www.banki.ru/upload/iblock/870/renessans_credit_135x85.gif"
+						   title="Ренессанс Кредит"
+						   href="/services/responses/bank/rencredit/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/161394/">Напрасные хлопоты</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-1" itemprop="rating">
+        <meta itemprop="value" content="1" />
+        1
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Хочу высказать свою позицию по отношению к банку. Я так же обратился с заявкой на выдачу кредита в сумме 100 000 рублей. Через некоторое время на телефон пришло сообщение с...
+						<a href="/services/responses/bank/response/161394/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Парфёнов Андрей</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/rencredit/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Ренессанс Кредит</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-16 14:00:00">16.05.2006 14:00</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/161394/#comments">7</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="/_images/i-logoBank.png"
+						   title="Ситибанк"
+						   href="/services/responses/bank/citibank/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/160727/">Не рекомендую!</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-1" itemprop="rating">
+        <meta itemprop="value" content="1" />
+        1
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Если рассматриваете необходимость получения потребительского кредита - не рекомендую этот банк. Иначе как издевательством политику этого банка по отношению к потенциальным клиентам...
+						<a href="/services/responses/bank/response/160727/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Михаил Скурлатов</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/citibank/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Ситибанк</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-15 13:53:00">15.05.2006 13:53</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/160727/#comments">17</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="//www.banki.ru/upload/iblock/dc3/vtb_bm_vert_135x85.gif"
+						   title="ВТБ Банк Москвы"
+						   href="/services/responses/bank/vtb/"></a>
+					
+					<div class="">
+
+													<span class="font-size-x-large icon-font icon-heart color-orange-2" data-toggle="tooltip" data-placement="top" data-content="<strong>Избранный отзыв</strong>"></span>
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/160641/">Есть рекорд!</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-1" itemprop="rating">
+        <meta itemprop="value" content="1" />
+        1
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Есть такая хорошая штука - интернет. Когда мне понадобилось в кратчайший срок получить некоторое количество денег, я сел за компьютер, быстренько определился с условиями кредитов и...
+						<a href="/services/responses/bank/response/160641/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Анатолий</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/vtb/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">ВТБ Банк Москвы</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-15 11:13:00">15.05.2006 11:13</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/160641/#comments">12</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="/_images/i-logoBank.png"
+						   title="Русский Стандарт"
+						   href="/services/responses/bank/rsb/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/160547/">Вымогательство денег</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-1" itemprop="rating">
+        <meta itemprop="value" content="1" />
+        1
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Когда-то моя мама брала потребительский кредит в "Русском стандарте". Расплатилась... После чего "благополучно" активировала карту на 30 тыс. руб. Не буду рассказывать о процентных...
+						<a href="/services/responses/bank/response/160547/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Ольга</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/rsb/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Русский Стандарт</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-13 17:10:00">13.05.2006 17:10</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/160547/#comments">5</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="/_images/i-logoBank.png"
+						   title="Русский Стандарт"
+						   href="/services/responses/bank/rsb/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/160506/">Приятная покупка с банком &quot;Русский Стандарт&quot;</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-5" itemprop="rating">
+        <meta itemprop="value" content="5" />
+        5
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Я из Питера. Вчера купила товар в магазине "Эльдорадо", и воспользовалась услугами банка "Русский Стандарт". <br>...
+						<a href="/services/responses/bank/response/160506/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=2743" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Complince</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/rsb/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Русский Стандарт</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-13 10:17:00">13.05.2006 10:17</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/160506/#comments">4</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="/_images/i-logoBank.png"
+						   title="Русский Стандарт"
+						   href="/services/responses/bank/rsb/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/160505/">Главное - быстрее расплатиться</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-5" itemprop="rating">
+        <meta itemprop="value" content="5" />
+        5
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						"Русский Стандарт" - хороший банк. Пользуюсь его услугами уже 2 года. Ни разу не подвёл. Брал потребительский кредит, месяц назад погасил, взял ещё. Активно пользуюсь их кредитной...
+						<a href="/services/responses/bank/response/160505/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Сергей</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/rsb/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Русский Стандарт</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-13 08:13:00">13.05.2006 8:13</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/160505/#comments">4</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="//www.banki.ru/upload/iblock/dc3/vtb_bm_vert_135x85.gif"
+						   title="ВТБ Банк Москвы"
+						   href="/services/responses/bank/vtb/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/159979/">Кадры решают все</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-1" itemprop="rating">
+        <meta itemprop="value" content="1" />
+        1
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Оформляла быстрокредит. При положительном решении никто из банка с вами не свяжется. И если сами не будете звонить в банк, то срок действия решения очень быстро истекает, а...
+						<a href="/services/responses/bank/response/159979/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=2716" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Complince</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/vtb/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">ВТБ Банк Москвы</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-12 11:07:00">12.05.2006 11:07</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<a href="/services/responses/bank/response/159979/#comments">Комментировать</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="//www.banki.ru/upload/iblock/870/renessans_credit_135x85.gif"
+						   title="Ренессанс Кредит"
+						   href="/services/responses/bank/rencredit/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/159947/">Гораздо лучше, чем РС!</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-5" itemprop="rating">
+        <meta itemprop="value" content="5" />
+        5
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Одновременно брал и гасил кредит в "Ренессансе" и в "Русском Стандарте"! На фоне РС впечатление о банке осталось приятное. При досрочном погашении штрафов не взяли, как и обещали...
+						<a href="/services/responses/bank/response/159947/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">TM</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/rencredit/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Ренессанс Кредит</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-12 08:47:00">12.05.2006 8:47</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<a href="/services/responses/bank/response/159947/#comments">Комментировать</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="/_images/i-logoBank.png"
+						   title="Русский Стандарт"
+						   href="/services/responses/bank/rsb/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/159946/">Закрыл кредит и слава богу!</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-1" itemprop="rating">
+        <meta itemprop="value" content="1" />
+        1
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						В связи с желанием купить в кредит автомобиль возникла необходимость досрочно закрыть потребительский кредит в "Русском Стандарте". Ужас, товарищи! 3 дня дозвона до их колл-центра...
+						<a href="/services/responses/bank/response/159946/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">TM</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/rsb/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Русский Стандарт</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-12 08:41:00">12.05.2006 8:41</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/159946/#comments">10</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="//www.banki.ru/upload/iblock/5b1/raiffeisen_135x85.gif"
+						   title="Райффайзенбанк"
+						   href="/services/responses/bank/raiffeisen/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/159690/">Кредит выдали в течение недели</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-5" itemprop="rating">
+        <meta itemprop="value" content="5" />
+        5
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Я являюсь клиентом Райффейзена с 2004 года, когда мне выдали зарплатную карту. Доволен абсолютно всем. Интернет-банк у них вообще лучший (еще я пользуюсь картами Ситибанка и Альфа...
+						<a href="/services/responses/bank/response/159690/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">nikon</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/raiffeisen/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Райффайзенбанк</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-11 15:32:00">11.05.2006 15:32</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/159690/#comments">1</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="/_images/i-logoBank.png"
+						   title="Русский Стандарт"
+						   href="/services/responses/bank/rsb/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/159668/">Почините  банкоматы!</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-1" itemprop="rating">
+        <meta itemprop="value" content="1" />
+        1
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Всем здравствуйте!<br>...
+						<a href="/services/responses/bank/response/159668/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">dem</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/rsb/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Русский Стандарт</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-11 14:47:00">11.05.2006 14:47</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/159668/#comments">5</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="//www.banki.ru/upload/iblock/224/alfabank_135x85.gif"
+						   title="Альфа-Банк"
+						   href="/services/responses/bank/alfabank/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/159435/">Затянувшееся рассмотрение</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-1" itemprop="rating">
+        <meta itemprop="value" content="1" />
+        1
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Я не понимаю, как такой банк еще может привлекать к себе клиентов. В середине апреля пыталась взять "Персональный кредит" в отделении "Третьяковское" (причем перед этим была...
+						<a href="/services/responses/bank/response/159435/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Катерина</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/alfabank/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Альфа-Банк</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-11 10:03:00">11.05.2006 10:03</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/159435/#comments">8</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="/_images/i-logoBank.png"
+						   title="Ситибанк"
+						   href="/services/responses/bank/citibank/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/158974/">Я очень довольна, что выбрала &quot;Ситибанк&quot;</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-5" itemprop="rating">
+        <meta itemprop="value" content="5" />
+        5
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Брала кредит на ремонт квартиры, правда сначала просила одну сумму, но<br>одобрили другую немного меньше. Получила деньги, сделала ремонт. Оплачивала кредит как положено без...
+						<a href="/services/responses/bank/response/158974/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Пухова Олеся Александровна</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/citibank/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Ситибанк</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-09 20:03:00">09.05.2006 20:03</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/158974/#comments">1</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="/_images/i-logoBank.png"
+						   title="Русский Стандарт"
+						   href="/services/responses/bank/rsb/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/158885/">Выводы для себя</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-1" itemprop="rating">
+        <meta itemprop="value" content="1" />
+        1
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Брал два потребительских кредита в "Русском Стандарте". Что понял из отзывов на форуме:<br>...
+						<a href="/services/responses/bank/response/158885/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">бывший клиент банка</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/rsb/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Русский Стандарт</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-09 11:49:00">09.05.2006 11:49</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/158885/#comments">4</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="//www.banki.ru/upload/iblock/dc3/vtb_bm_vert_135x85.gif"
+						   title="ВТБ Банк Москвы"
+						   href="/services/responses/bank/vtb/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/158674/">Кредитный договор</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-3" itemprop="rating">
+        <meta itemprop="value" content="3" />
+        3
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Добрый день.<br>...
+						<a href="/services/responses/bank/response/158674/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Мария</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/vtb/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">ВТБ Банк Москвы</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-06 16:24:00">06.05.2006 16:24</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/158674/#comments">5</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="//www.banki.ru/upload/iblock/76d/psbank_135x85.gif"
+						   title="Промсвязьбанк"
+						   href="/services/responses/bank/promsvyazbank/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/158349/">Небольшой кредит за небольшой промежуток времени</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-5" itemprop="rating">
+        <meta itemprop="value" content="5" />
+        5
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Недавно получила потребительский кредит в Промсвязьбанке на 3 года. Принимая во внимание плачевный опыт общения с работниками Сбербанка в переносном и буквальном смысле, могу...
+						<a href="/services/responses/bank/response/158349/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">неизвестный</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/promsvyazbank/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Промсвязьбанк</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-05 20:34:00">05.05.2006 20:34</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/158349/#comments">3</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="//www.banki.ru/upload/iblock/2bd/vozrozhdenie_135x85.gif"
+						   title="Возрождение"
+						   href="/services/responses/bank/vozrozhdenie/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/158329/">Все мы под Богом ходим</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-1" itemprop="rating">
+        <meta itemprop="value" content="1" />
+        1
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Прекрасно всех понимаю! Возрождение им надо было заменить Утопией... В жизни больше не обращусь в этот банк... В Балашихе есть их филиал.<br>...
+						<a href="/services/responses/bank/response/158329/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Елена</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/vozrozhdenie/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Возрождение</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-05 18:45:00">05.05.2006 18:45</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/158329/#comments">7</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="//www.banki.ru/upload/iblock/2bd/vozrozhdenie_135x85.gif"
+						   title="Возрождение"
+						   href="/services/responses/bank/vozrozhdenie/"></a>
+					
+					<div class="">
+
+													<span class="font-size-x-large icon-font icon-heart color-orange-2" data-toggle="tooltip" data-placement="top" data-content="<strong>Избранный отзыв</strong>"></span>
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/158327/">Чудо-банк</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-1" itemprop="rating">
+        <meta itemprop="value" content="1" />
+        1
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Собирался взять в банке кредит на неотложные нужды. Самое главное, что просто убивает в работе банка - график обслуживания клиентов: с 9.30 до 16.30 (видел здесь и другие цифры, но...
+						<a href="/services/responses/bank/response/158327/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Анатолий</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/vozrozhdenie/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Возрождение</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-05 18:22:00">05.05.2006 18:22</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/158327/#comments">2</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="//www.banki.ru/upload/iblock/655/rosbank_135x85.gif"
+						   title="Росбанк"
+						   href="/services/responses/bank/rosbank/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/158269/">Недавно взяла кредит &quot;Просто деньги&quot;</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-5" itemprop="rating">
+        <meta itemprop="value" content="5" />
+        5
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Недавно взяла кредит "Просто деньги" в отделении, расположенном недалеко от ст. "Арбатская" (Сивцев Вражек). Все было очень вежливо, ответ дали на следующий день. Была в этом...
+						<a href="/services/responses/bank/response/158269/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Мария</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/rosbank/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Росбанк</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-05 17:23:00">05.05.2006 17:23</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/158269/#comments">5</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="//www.banki.ru/upload/iblock/76d/psbank_135x85.gif"
+						   title="Промсвязьбанк"
+						   href="/services/responses/bank/promsvyazbank/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/158047/">Кредит за 30 минут или 3-4 дня без ответа</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-1" itemprop="rating">
+        <meta itemprop="value" content="1" />
+        1
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Как и многие соблазнился я на рекламу о кредите за 30 минут. Деньги были нужны не очень срочно (за два-три дня), но такая легкость радует, что за 30 минут можно получить до 150000.<...
+						<a href="/services/responses/bank/response/158047/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Денис</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/promsvyazbank/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Промсвязьбанк</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-05 14:02:00">05.05.2006 14:02</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<a href="/services/responses/bank/response/158047/#comments">Комментировать</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="//www.banki.ru/upload/iblock/870/renessans_credit_135x85.gif"
+						   title="Ренессанс Кредит"
+						   href="/services/responses/bank/rencredit/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/157551/">Никаких документов...</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-1" itemprop="rating">
+        <meta itemprop="value" content="1" />
+        1
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Я стал клиентом банка по элементарному кредиту в магазине "М-видео". И исправно его выплачивал, сетуя только на то, что по этим кредитам в противоречии к договору, нет письменных...
+						<a href="/services/responses/bank/response/157551/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Немец Вадим Михайлович</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/rencredit/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Ренессанс Кредит</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-04 17:29:00">04.05.2006 17:29</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/157551/#comments">5</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="/_images/i-logoBank.png"
+						   title="Русский Стандарт"
+						   href="/services/responses/bank/rsb/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/157241/">Как они &quot;любят&quot; клиентов</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-1" itemprop="rating">
+        <meta itemprop="value" content="1" />
+        1
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Вместо отзыва я скопирую текст претензии, которую понесу в банк.<br>...
+						<a href="/services/responses/bank/response/157241/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Константин</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/rsb/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Русский Стандарт</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-04 12:29:00">04.05.2006 12:29</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/157241/#comments">13</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="//www.banki.ru/upload/iblock/870/renessans_credit_135x85.gif"
+						   title="Ренессанс Кредит"
+						   href="/services/responses/bank/rencredit/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/157151/">Нормальный банк</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-5" itemprop="rating">
+        <meta itemprop="value" content="5" />
+        5
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Взял кредит в "Ренессанс Капитале", в СПб, магазин "РИМ- Озерки". Что-то около 45 т.р., на четыре месяца, около 30% первый взнос ("около" потому как давно было, уже не помню точно...
+						<a href="/services/responses/bank/response/157151/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=2508" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Complince</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/rencredit/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Ренессанс Кредит</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-04 11:33:00">04.05.2006 11:33</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/157151/#comments">7</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="/_images/i-logoBank.png"
+						   title="Ситибанк"
+						   href="/services/responses/bank/citibank/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/157149/">И что теперь делать?</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-1" itemprop="rating">
+        <meta itemprop="value" content="1" />
+        1
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Обратился в Сити за потребительским кредитом. Специально делал 2-НДФЛ и копию трудовой. В принципе, обычное требование. Сам даже приехал в Ленту и сам (!) подошел к сотруднице...
+						<a href="/services/responses/bank/response/157149/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Dgiharka</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/citibank/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Ситибанк</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-04 11:32:00">04.05.2006 11:32</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<span class="icon-font icon-bubble"></span>
+								<a href="/services/responses/bank/response/157149/#comments">10</a>
+													</div>
+					</footer>
+
+									</article>
+							<article class="responses__item">
+											<a class="responses__item__logo lazy-load"
+						   data-bg-src="//www.banki.ru/upload/iblock/76d/psbank_135x85.gif"
+						   title="Промсвязьбанк"
+						   href="/services/responses/bank/promsvyazbank/"></a>
+					
+					<div class="">
+
+						
+						<a class="font-size-large font-bold margin-left-xx-small" href="/services/responses/bank/response/157046/">Кредит за 30 минут</a>
+
+					</div>
+
+					<div class="responses__item__rating">
+						                    оценка: <span
+         itemscope itemtype="http://data-vocabulary.org/Rating"        class="rating-grade rating-grade--small rating-grade--value-1" itemprop="rating">
+        <meta itemprop="value" content="1" />
+        1
+    </span>
+
+    
+
+					</div>
+
+					<div class="responses__item__message">
+						Вчера пришел в банк (отделение в политехническом музее) оформить "кредит за 30 минут". У охранника, сидящего слева, спросил: &laquo;К кому обратиться?&raquo; В ответ: "Посидите...
+						<a href="/services/responses/bank/response/157046/">Весь отзыв</a>
+					</div>
+
+					<footer class="responses__item__info">
+						<div class="responses__item__from">
+							<a href="/profile/?UID=" class="link-with-icon">
+								<span class="icon-font icon-user"></span>
+								<span class="link-with-icon__text color-gray-blue">Владимир</span>
+							</a>
+
+															<span class="responses__item__info__delim">&rarr;</span>
+
+																<a href="/services/responses/bank/promsvyazbank/" class="link-with-icon">
+									<span class="icon-font icon-bank"></span>
+									<span class="link-with-icon__text color-link">Промсвязьбанк</span>
+								</a>
+													</div>
+
+						<time class="display-inline-block" pubdate datetime="2006-05-03 21:35:00">03.05.2006 21:35</time>
+
+						<span class="ui-bull-sep"></span>
+
+						<div class="responses__item__comment">
+															<a href="/services/responses/bank/response/157046/#comments">Комментировать</a>
+													</div>
+					</footer>
+
+									</article>
+					</div>
+
+					<div class="spacer"></div>
+
+			<div data-pager
+				 data-options="currentPageNumber: 665; itemsPerPage: 25; totalItems: 16779; title: Отзывов"></div>
+			
+			</div>
+		</div>
+
+		<script>
+			banki.utils.domReady.push(function() {
+				require(['jquery', '/static/bundles/Ratings/BaseRating/responses-list/responses-list.js?_v=e3e1345203'], function($, ResponsesList) {
+					new ResponsesList($('#responses-list-app'), {
+						productsAndCategories: {"serviceTypeList":[{"name":"\u0410\u0432\u0442\u043e\u043a\u0440\u0435\u0434\u0438\u0442\u044b","product_id":"autocredits","count":3205},{"name":"\u0412\u043a\u043b\u0430\u0434\u044b","product_id":"deposits","count":19739},{"name":"\u0414\u0435\u0431\u0435\u0442\u043e\u0432\u044b\u0435 \u043a\u0430\u0440\u0442\u044b","product_id":"debitcards","count":11955},{"name":"\u0414\u0435\u043f\u043e\u0437\u0438\u0442\u044b \u0434\u043b\u044f \u0431\u0438\u0437\u043d\u0435\u0441\u0430","product_id":"businessdeposits","count":75},{"name":"\u0414\u0438\u0441\u0442\u0430\u043d\u0446\u0438\u043e\u043d\u043d\u043e\u0435 \u043e\u0431\u0441\u043b\u0443\u0436\u0438\u0432\u0430\u043d\u0438\u0435","product_id":"remote","count":16233},{"name":"\u0418\u043f\u043e\u0442\u0435\u0447\u043d\u044b\u0435 \u043a\u0440\u0435\u0434\u0438\u0442\u044b","product_id":"hypothec","count":6047},{"name":"\u041a\u0440\u0435\u0434\u0438\u0442\u043d\u044b\u0435 \u043a\u0430\u0440\u0442\u044b","product_id":"creditcards","count":18169},{"name":"\u041a\u0440\u0435\u0434\u0438\u0442\u043e\u0432\u0430\u043d\u0438\u0435 \u0431\u0438\u0437\u043d\u0435\u0441\u0430","product_id":"businesscredits","count":270},{"name":"\u041b\u0438\u0437\u0438\u043d\u0433","product_id":"leasing","count":19},{"name":"\u041e\u0431\u0441\u043b\u0443\u0436\u0438\u0432\u0430\u043d\u0438\u0435 \u044e\u0440\u043b\u0438\u0446","product_id":"corporate","count":6316},{"name":"\u041f\u043e\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043b\u044c\u0441\u043a\u0438\u0435 \u043a\u0440\u0435\u0434\u0438\u0442\u044b","product_id":"credits","count":16779},{"name":"\u0420\u0435\u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0438\u0437\u0430\u0446\u0438\u044f \u043a\u0440\u0435\u0434\u0438\u0442\u043e\u0432","product_id":"restructing","count":760}],"categoriesAndGrades":{"all":123803,"grade_1":69480,"grade_2":18373,"grade_3":11526,"grade_4":4468,"grade_5":17895,"is_month":104,"is_chosen":1086,"is_countable":123803,"is_with_bank_answer":87163,"resolution_is_approved":19691,"is_with_agent_answer":87163}},
+						pageHeaderText: 'Отзывы о потребительских кредитах',
+						filterState: {
+							type: "",
+							rate: [],
+							product: "credits",
+														is_countable: "on"
+						},
+                        baseUrl: '/services/responses/',
+												companyType: 'bank',
+						categoriesItemsTitles: {
+							'all': 'все отзывы',
+							'is_chosen': 'избранные',
+							'is_month': 'отзывы месяца',
+							'is_with_agent_answer': 'с ответами банка',
+							'resolution_is_approved': 'с решением проблемы'
+						},
+						categoriesItemsOrder: ['all', 'is_with_agent_answer', 'resolution_is_approved', 'is_chosen', 'is_month'], 						allServicesTitle: 'все услуги',
+						responsesListUrl: function(params) {
+							return '/services/responses/'
+							+ (params.company ? ('bank/' + params.company + '/') : 'list/')
+							+ (params.city ? ('city/' + params.city + '/') : '')
+							+ (params.product ? ('product/' + params.product + '/') : '');
+						},
+						getCompanies: function(done) {
+							$.ajax({
+								url: '/api/',
+								type: 'POST',
+								dataType: 'json',
+								data: '{"jsonrpc":"2.0", "method":"bankInfo/getBankList", "params":[], "id":"12345"}',
+								success: function(response) {
+									if (response && response.result && response.result.data) {
+										var resultItems = [];
+
+										Object.keys(response.result.data || {}).forEach(function(key) {
+											var item = response.result.data[key];
+											resultItems.push({
+												id: item.bank_id,
+												name: item.bank_name,
+												selected: false
+											});
+										});
+
+										done(resultItems);
+									}
+								},
+								error: function() {
+									alert('Server error');
+								}
+							});
+						}
+					});
+				});
+			});
+		</script>
+	</div>
+
+			<section id="widget-popular-offers" class="widget widget--is-loading" data-test="folkrating-responses-popularoffers">
+	<h2 class="widget__title" data-test="folkrating-responses-popularoffers-header">Популярные предложения</h2>
+
+	<div class="ui-columns ui-columns--colcount_2" data-test="folkrating-responses-popularoffers-content">
+		<div class="ui-columns__column">
+			<div class="bitrix-component"
+	data-name="custom:advertising.block"
+	data-template="tgb"
+	data-params='{&quot;BANNER_TYPE&quot;:&quot;RESP&quot;,&quot;CODE&quot;:&quot;bottom_01&quot;}'
+	data-group="banners"
+		></div>
+		</div>
+
+		<div class="ui-columns__column">
+			<div class="bitrix-component"
+	data-name="custom:advertising.block"
+	data-template="tgb"
+	data-params='{&quot;BANNER_TYPE&quot;:&quot;RESP&quot;,&quot;CODE&quot;:&quot;bottom_02&quot;}'
+	data-group="banners"
+		></div>
+		</div>
+	</div>
+
+	<script>
+		banki.utils.domReady.push(function() {
+			require(['/static/common/components/popular-offers-tgb/popular-offers-tgb-async.js?_v=6494d8e31d'], function(TgbBanners) {
+				TgbBanners('#widget-popular-offers');
+			});
+		});
+	</script>
+</section>			</main>
+
+		<aside class="layout-column-right">
+				<section class="widget">
+		<div class="bitrix-component"
+	data-name="custom:advertising.block"
+	data-template="tgb"
+	data-params='{&quot;BANNER_TYPE&quot;:&quot;RESP&quot;,&quot;CODE&quot;:&quot;list_right_01&quot;}'
+	data-group="banners"
+		></div>
+	</section>
+
+	<div class="bitrix-component"
+	data-name="custom:advertising.block"
+	data-template="redesign.240x400"
+	data-params='{&quot;BANNER_TYPE&quot;:&quot;RESP&quot;,&quot;CODE&quot;:&quot;list_right_02&quot;}'
+	data-group="banners"
+		></div>
+
+	<div data-ajax-widget="/widget/BankiruRatingsBankRatingBundle:Response:topBanks"></div>
+
+	<section class="widget" id="responses-products-links" data-test="seo-block">
+	<h3 class="widget__title widget__title--line" data-test="seo-block-title">
+									Отзывы о продуктах банков
+						</h3>
+
+	<ul class="text-list" data-items data-test="seo-block-content">
+		
+					<li>
+															<a href="/services/responses/list/product/credits/">Потребительские кредиты</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/product/autocredits/">Автокредиты</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/product/deposits/">Вклады</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/product/debitcards/">Дебетовые карты</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/product/businessdeposits/">Депозиты для бизнеса</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/product/remote/">Дистанционное обслуживание</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/product/hypothec/">Ипотечные кредиты</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/product/creditcards/">Кредитные карты</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/product/businesscredits/">Кредитование бизнеса</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/product/leasing/">Лизинг</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/product/corporate/">Обслуживание юрлиц</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/product/restructing/">Реструктуризация кредитов</a>
+												</li>
+			</ul>
+
+	<div data-pager class="margin-top-default"></div>
+
+	<script>
+		banki.utils.domReady.push(function() {
+			require(['jquery', 'inViewport'], function($) {
+				var $widget = $('#responses-products-links');
+
+				$widget.inViewport(function() {
+					var $pager = $widget.find('[data-pager]'),
+						$items = $widget.find('[data-items]').children();
+
+					require(['ui.mini-pager'], function(pager) {
+						pager($pager, {
+							items: $items,
+							pageItemsCount: 10
+						});
+					});
+				});
+			});
+		});
+	</script>
+</section>
+	<section class="widget">
+		<link rel="stylesheet" href="/static/widgets/banks-filter/banks-filter.css?_v=c8a43e11ef" />
+
+<link rel="stylesheet" href="/bx-static/bank-card/bank-card.css?_v=1482766397" />
+
+
+<section class="widget" data-test="banks-carousel-vertical">
+	<h2 class="widget__title"><a href="/banks/">Банки </a></h2>
+
+	<div class="padding-small bg-gray">
+		<form action="/banks/search/" method="GET" class="js-search-input-form" data-module="search-input">
+
+			<input type="hidden" name="search[id]" value="">
+			<input type="hidden" name="search[type]" value="name">
+
+			<div class="banks-filter banks-filter--strong">
+
+				<div>
+					<div class="b-search__button">
+						<input type="submit" class="button button--blue" value="Найти">
+					</div>
+					<div class="b-search__input">
+						<div class="input-search">
+							<input id="js-all-banks-filter-typeahead" class="banks-filter__input input-search__field"
+								   type="text" placeholder="Введите название банка" name="search[text]">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<input class="input--ghost" type="submit" value="submit">
+		</form>
+	</div>
+
+	<div class="bg-gray">
+		<div class="scroller scroller--fade" data-orientation="vertical"
+			 data-module="ui.scroller">
+
+			<ul class="scroller__holder" style="height: 820px;">
+									<li class="scroller__item">
+						<div class="bank-card">
+							<div class="bank-card__logo-box">
+								<a class="bank-card__logo" href="/banks/bank/riabank/"
+								   title="Риабанк">
+									<img class="lazy-load"
+										 data-src="//www.banki.ru/upload/iblock/131/riabank_100x63.gif"
+										 alt="Риабанк">
+									<noscript>
+										<img class="lazy-load"
+                                             src="//www.banki.ru/upload/iblock/131/riabank_100x63.gif"
+											 alt="Риабанк">
+									</noscript>
+								</a>
+							</div>
+
+							<a class="bank-card__name"
+							   href="/banks/bank/riabank/">Риабанк</a>
+
+							<ul class="bank-card__products">
+																	<li class="bank-card__products--item">
+										<a href="/products/deposits/riabank/">Вклады</a> 5									</li>
+								
+								
+								
+								
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/businesscredits/riabank/">Кредиты для бизнеса</a> 11									</li>
+								
+															</ul>
+						</div>
+					</li>
+									<li class="scroller__item">
+						<div class="bank-card">
+							<div class="bank-card__logo-box">
+								<a class="bank-card__logo" href="/banks/bank/intesa/"
+								   title="Банк Интеза">
+									<img class="lazy-load"
+										 data-src="//www.banki.ru/upload/iblock/f03/bank_inteza_100x63.gif"
+										 alt="Банк Интеза">
+									<noscript>
+										<img class="lazy-load"
+                                             src="//www.banki.ru/upload/iblock/f03/bank_inteza_100x63.gif"
+											 alt="Банк Интеза">
+									</noscript>
+								</a>
+							</div>
+
+							<a class="bank-card__name"
+							   href="/banks/bank/intesa/">Банк Интеза</a>
+
+							<ul class="bank-card__products">
+																	<li class="bank-card__products--item">
+										<a href="/products/deposits/intesa/">Вклады</a> 8									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/credits/intesa/">Кредиты</a> 1									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/creditcards/intesa/">Кредитные карты</a> 2									</li>
+								
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/hypothec/intesa/">Ипотека</a> 2									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/businesscredits/intesa/">Кредиты для бизнеса</a> 5									</li>
+								
+															</ul>
+						</div>
+					</li>
+									<li class="scroller__item">
+						<div class="bank-card">
+							<div class="bank-card__logo-box">
+								<a class="bank-card__logo" href="/banks/bank/binbankcreditcard/"
+								   title="Бинбанк кредитные карты">
+									<img class="lazy-load"
+										 data-src="//www.banki.ru/upload/iblock/a63/binbank_kk_100x63.gif"
+										 alt="Бинбанк кредитные карты">
+									<noscript>
+										<img class="lazy-load"
+                                             src="//www.banki.ru/upload/iblock/a63/binbank_kk_100x63.gif"
+											 alt="Бинбанк кредитные карты">
+									</noscript>
+								</a>
+							</div>
+
+							<a class="bank-card__name"
+							   href="/banks/bank/binbankcreditcard/">Бинбанк кредитные карты</a>
+
+							<ul class="bank-card__products">
+								
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/creditcards/binbankcreditcard/">Кредитные карты</a> 1									</li>
+								
+								
+								
+								
+															</ul>
+						</div>
+					</li>
+									<li class="scroller__item">
+						<div class="bank-card">
+							<div class="bank-card__logo-box">
+								<a class="bank-card__logo" href="/banks/bank/agropromcredit/"
+								   title="Агропромкредит">
+									<img class="lazy-load"
+										 data-src="//www.banki.ru/upload/iblock/681/agropromcredit_100x63.gif"
+										 alt="Агропромкредит">
+									<noscript>
+										<img class="lazy-load"
+                                             src="//www.banki.ru/upload/iblock/681/agropromcredit_100x63.gif"
+											 alt="Агропромкредит">
+									</noscript>
+								</a>
+							</div>
+
+							<a class="bank-card__name"
+							   href="/banks/bank/agropromcredit/">Агропромкредит</a>
+
+							<ul class="bank-card__products">
+																	<li class="bank-card__products--item">
+										<a href="/products/deposits/agropromcredit/">Вклады</a> 7									</li>
+								
+								
+								
+								
+								
+								
+															</ul>
+						</div>
+					</li>
+									<li class="scroller__item">
+						<div class="bank-card">
+							<div class="bank-card__logo-box">
+								<a class="bank-card__logo" href="/banks/bank/globexbank/"
+								   title="Глобэкс">
+									<img class="lazy-load"
+										 data-src="//www.banki.ru/upload/iblock/97a/globex_100x63.gif"
+										 alt="Глобэкс">
+									<noscript>
+										<img class="lazy-load"
+                                             src="//www.banki.ru/upload/iblock/97a/globex_100x63.gif"
+											 alt="Глобэкс">
+									</noscript>
+								</a>
+							</div>
+
+							<a class="bank-card__name"
+							   href="/banks/bank/globexbank/">Глобэкс</a>
+
+							<ul class="bank-card__products">
+																	<li class="bank-card__products--item">
+										<a href="/products/deposits/globexbank/">Вклады</a> 6									</li>
+								
+								
+								
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/hypothec/globexbank/">Ипотека</a> 3									</li>
+								
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/businessdeposits/globexbank/">Депозиты для юридических лиц</a> 19									</li>
+															</ul>
+						</div>
+					</li>
+									<li class="scroller__item">
+						<div class="bank-card">
+							<div class="bank-card__logo-box">
+								<a class="bank-card__logo" href="/banks/bank/talmenka-bank-mf/"
+								   title="Тальменка-Банк — Московский филиал">
+									<img class="lazy-load"
+										 data-src="//www.banki.ru/upload/iblock/806/tb22_100x63.gif"
+										 alt="Тальменка-Банк — Московский филиал">
+									<noscript>
+										<img class="lazy-load"
+                                             src="//www.banki.ru/upload/iblock/806/tb22_100x63.gif"
+											 alt="Тальменка-Банк — Московский филиал">
+									</noscript>
+								</a>
+							</div>
+
+							<a class="bank-card__name"
+							   href="/banks/bank/talmenka-bank-mf/">Тальменка-Банк — Московский филиал</a>
+
+							<ul class="bank-card__products">
+																	<li class="bank-card__products--item">
+										<a href="/products/deposits/talmenka-bank-mf/">Вклады</a> 3									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/credits/talmenka-bank-mf/">Кредиты</a> 1									</li>
+								
+								
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/hypothec/talmenka-bank-mf/">Ипотека</a> 1									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/businesscredits/talmenka-bank-mf/">Кредиты для бизнеса</a> 2									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/businessdeposits/talmenka-bank-mf/">Депозиты для юридических лиц</a> 2									</li>
+															</ul>
+						</div>
+					</li>
+									<li class="scroller__item">
+						<div class="bank-card">
+							<div class="bank-card__logo-box">
+								<a class="bank-card__logo" href="/banks/bank/promsvyazbank/"
+								   title="Промсвязьбанк">
+									<img class="lazy-load"
+										 data-src="//www.banki.ru/upload/iblock/db7/psbank_100x63.gif"
+										 alt="Промсвязьбанк">
+									<noscript>
+										<img class="lazy-load"
+                                             src="//www.banki.ru/upload/iblock/db7/psbank_100x63.gif"
+											 alt="Промсвязьбанк">
+									</noscript>
+								</a>
+							</div>
+
+							<a class="bank-card__name"
+							   href="/banks/bank/promsvyazbank/">Промсвязьбанк</a>
+
+							<ul class="bank-card__products">
+																	<li class="bank-card__products--item">
+										<a href="/products/deposits/promsvyazbank/">Вклады</a> 21									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/credits/promsvyazbank/">Кредиты</a> 2									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/creditcards/promsvyazbank/">Кредитные карты</a> 4									</li>
+								
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/hypothec/promsvyazbank/">Ипотека</a> 5									</li>
+								
+								
+															</ul>
+						</div>
+					</li>
+									<li class="scroller__item">
+						<div class="bank-card">
+							<div class="bank-card__logo-box">
+								<a class="bank-card__logo" href="/banks/bank/maritime/"
+								   title="Морской Банк">
+									<img class="lazy-load"
+										 data-src="//www.banki.ru/upload/iblock/cab/morskoy_100x63.gif"
+										 alt="Морской Банк">
+									<noscript>
+										<img class="lazy-load"
+                                             src="//www.banki.ru/upload/iblock/cab/morskoy_100x63.gif"
+											 alt="Морской Банк">
+									</noscript>
+								</a>
+							</div>
+
+							<a class="bank-card__name"
+							   href="/banks/bank/maritime/">Морской Банк</a>
+
+							<ul class="bank-card__products">
+																	<li class="bank-card__products--item">
+										<a href="/products/deposits/maritime/">Вклады</a> 3									</li>
+								
+								
+								
+								
+								
+								
+															</ul>
+						</div>
+					</li>
+									<li class="scroller__item">
+						<div class="bank-card">
+							<div class="bank-card__logo-box">
+								<a class="bank-card__logo" href="/banks/bank/novahovcb/"
+								   title="НоваховКапиталБанк">
+									<img class="lazy-load"
+										 data-src="//www.banki.ru/upload/iblock/7ad/novahov_capital_bank_100x63.gif"
+										 alt="НоваховКапиталБанк">
+									<noscript>
+										<img class="lazy-load"
+                                             src="//www.banki.ru/upload/iblock/7ad/novahov_capital_bank_100x63.gif"
+											 alt="НоваховКапиталБанк">
+									</noscript>
+								</a>
+							</div>
+
+							<a class="bank-card__name"
+							   href="/banks/bank/novahovcb/">НоваховКапиталБанк</a>
+
+							<ul class="bank-card__products">
+																	<li class="bank-card__products--item">
+										<a href="/products/deposits/novahovcb/">Вклады</a> 5									</li>
+								
+								
+								
+								
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/businesscredits/novahovcb/">Кредиты для бизнеса</a> 4									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/businessdeposits/novahovcb/">Депозиты для юридических лиц</a> 2									</li>
+															</ul>
+						</div>
+					</li>
+									<li class="scroller__item">
+						<div class="bank-card">
+							<div class="bank-card__logo-box">
+								<a class="bank-card__logo" href="/banks/bank/investtorgbank/"
+								   title="Инвестторгбанк">
+									<img class="lazy-load"
+										 data-src="//www.banki.ru/upload/iblock/81c/itb_100x63.gif"
+										 alt="Инвестторгбанк">
+									<noscript>
+										<img class="lazy-load"
+                                             src="//www.banki.ru/upload/iblock/81c/itb_100x63.gif"
+											 alt="Инвестторгбанк">
+									</noscript>
+								</a>
+							</div>
+
+							<a class="bank-card__name"
+							   href="/banks/bank/investtorgbank/">Инвестторгбанк</a>
+
+							<ul class="bank-card__products">
+																	<li class="bank-card__products--item">
+										<a href="/products/deposits/investtorgbank/">Вклады</a> 7									</li>
+								
+								
+								
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/hypothec/investtorgbank/">Ипотека</a> 6									</li>
+								
+								
+															</ul>
+						</div>
+					</li>
+									<li class="scroller__item">
+						<div class="bank-card">
+							<div class="bank-card__logo-box">
+								<a class="bank-card__logo" href="/banks/bank/vvb_nf/"
+								   title="Банк ВВБ — Невский филиал">
+									<img class="lazy-load"
+										 data-src="//www.banki.ru/upload/iblock/944/bank_vvb_100x63.gif"
+										 alt="Банк ВВБ — Невский филиал">
+									<noscript>
+										<img class="lazy-load"
+                                             src="//www.banki.ru/upload/iblock/944/bank_vvb_100x63.gif"
+											 alt="Банк ВВБ — Невский филиал">
+									</noscript>
+								</a>
+							</div>
+
+							<a class="bank-card__name"
+							   href="/banks/bank/vvb_nf/">Банк ВВБ — Невский филиал</a>
+
+							<ul class="bank-card__products">
+																	<li class="bank-card__products--item">
+										<a href="/products/deposits/vvb_nf/">Вклады</a> 8									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/credits/vvb_nf/">Кредиты</a> 4									</li>
+								
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/autocredits/vvb_nf/">Автокредиты</a> 2									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/hypothec/vvb_nf/">Ипотека</a> 1									</li>
+								
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/businessdeposits/vvb_nf/">Депозиты для юридических лиц</a> 1									</li>
+															</ul>
+						</div>
+					</li>
+									<li class="scroller__item">
+						<div class="bank-card">
+							<div class="bank-card__logo-box">
+								<a class="bank-card__logo" href="/banks/bank/ankorbank_mf/"
+								   title="Анкор Банк — Московский филиал">
+									<img class="lazy-load"
+										 data-src="//www.banki.ru/upload/iblock/9d3/ankorbank_100x63.gif"
+										 alt="Анкор Банк — Московский филиал">
+									<noscript>
+										<img class="lazy-load"
+                                             src="//www.banki.ru/upload/iblock/9d3/ankorbank_100x63.gif"
+											 alt="Анкор Банк — Московский филиал">
+									</noscript>
+								</a>
+							</div>
+
+							<a class="bank-card__name"
+							   href="/banks/bank/ankorbank_mf/">Анкор Банк — Московский филиал</a>
+
+							<ul class="bank-card__products">
+																	<li class="bank-card__products--item">
+										<a href="/products/deposits/ankorbank_mf/">Вклады</a> 5									</li>
+								
+								
+								
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/hypothec/ankorbank_mf/">Ипотека</a> 12									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/businesscredits/ankorbank_mf/">Кредиты для бизнеса</a> 4									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/businessdeposits/ankorbank_mf/">Депозиты для юридических лиц</a> 3									</li>
+															</ul>
+						</div>
+					</li>
+									<li class="scroller__item">
+						<div class="bank-card">
+							<div class="bank-card__logo-box">
+								<a class="bank-card__logo" href="/banks/bank/unistream/"
+								   title="Юнистрим">
+									<img class="lazy-load"
+										 data-src="//www.banki.ru/upload/iblock/681/unistream_100x63.gif"
+										 alt="Юнистрим">
+									<noscript>
+										<img class="lazy-load"
+                                             src="//www.banki.ru/upload/iblock/681/unistream_100x63.gif"
+											 alt="Юнистрим">
+									</noscript>
+								</a>
+							</div>
+
+							<a class="bank-card__name"
+							   href="/banks/bank/unistream/">Юнистрим</a>
+
+							<ul class="bank-card__products">
+								
+								
+								
+								
+								
+								
+															</ul>
+						</div>
+					</li>
+									<li class="scroller__item">
+						<div class="bank-card">
+							<div class="bank-card__logo-box">
+								<a class="bank-card__logo" href="/banks/bank/confidencebank_mo/"
+								   title="Конфидэнс Банк — Московский офис">
+									<img class="lazy-load"
+										 data-src="//www.banki.ru/upload/iblock/f02/confidencebank_100x63.gif"
+										 alt="Конфидэнс Банк — Московский офис">
+									<noscript>
+										<img class="lazy-load"
+                                             src="//www.banki.ru/upload/iblock/f02/confidencebank_100x63.gif"
+											 alt="Конфидэнс Банк — Московский офис">
+									</noscript>
+								</a>
+							</div>
+
+							<a class="bank-card__name"
+							   href="/banks/bank/confidencebank_mo/">Конфидэнс Банк — Московский офис</a>
+
+							<ul class="bank-card__products">
+																	<li class="bank-card__products--item">
+										<a href="/products/deposits/confidencebank_mo/">Вклады</a> 7									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/credits/confidencebank_mo/">Кредиты</a> 5									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/creditcards/confidencebank_mo/">Кредитные карты</a> 1									</li>
+								
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/hypothec/confidencebank_mo/">Ипотека</a> 1									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/businesscredits/confidencebank_mo/">Кредиты для бизнеса</a> 2									</li>
+								
+															</ul>
+						</div>
+					</li>
+									<li class="scroller__item">
+						<div class="bank-card">
+							<div class="bank-card__logo-box">
+								<a class="bank-card__logo" href="/banks/bank/binbank/"
+								   title="Бинбанк">
+									<img class="lazy-load"
+										 data-src="//www.banki.ru/upload/iblock/33a/binbank_100x63.gif"
+										 alt="Бинбанк">
+									<noscript>
+										<img class="lazy-load"
+                                             src="//www.banki.ru/upload/iblock/33a/binbank_100x63.gif"
+											 alt="Бинбанк">
+									</noscript>
+								</a>
+							</div>
+
+							<a class="bank-card__name"
+							   href="/banks/bank/binbank/">Бинбанк</a>
+
+							<ul class="bank-card__products">
+																	<li class="bank-card__products--item">
+										<a href="/products/deposits/binbank/">Вклады</a> 6									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/credits/binbank/">Кредиты</a> 5									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/creditcards/binbank/">Кредитные карты</a> 3									</li>
+								
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/hypothec/binbank/">Ипотека</a> 5									</li>
+								
+																	<li class="bank-card__products--item">
+										<a href="/products/businesscredits/binbank/">Кредиты для бизнеса</a> 5									</li>
+								
+															</ul>
+						</div>
+					</li>
+							</ul>
+		</div>
+	</div>
+
+	<script>
+		banki.utils.domReady.push(function() {
+			require(['jquery', 'inViewport'], function($) {
+				var $filter = $('#js-all-banks-filter-typeahead');
+
+				$filter.inViewport(function() {
+					require(requireModules['ui.typeahead'], function() {
+						({
+							state: {
+								api_list_loaded: false
+							},
+
+							ui: {
+								$filter: $('#js-all-banks-filter-typeahead')
+							},
+
+                            config: {
+                                regionId: ''
+                            },
+
+							init: function () {
+								var self = this;
+
+								this.ui.$filter.bind('focus', function () {
+									if (!self.state.api_list_loaded) {
+										self.getAPI(self.startTypeahead);
+									}
+								});
+							},
+
+                            startTypeahead: function (data) {
+                                this.ui.$filter.typeahead({
+                                    name: 'banks',
+                                    local: data,
+                                    limit: 10
+                                });
+
+                                this.ui.$filter.bind('typeahead:selected typeahead:autocompleted', function (event, result, name) {
+                                    document.location.href = '/banks/bank/' + result._code + '/';
+                                });
+
+                                // Dirty hack for lost focus :(
+                                this.ui.$filter.trigger('focus');
+                            },
+
+                            getAPI: function (callback) {
+                                var self = this, params = {};
+
+                                if (self.config.regionId) {
+                                    params.region_id = [self.config.regionId];
+                                }
+
+                                $.ajax({
+                                    url: '/api/',
+                                    type: 'POST',
+                                    dataType: 'json',
+                                    data: JSON.stringify({
+                                        'jsonrpc': '2.0',
+                                        'method': 'bankInfo/getBankList',
+                                        'params': params,
+                                        'id': 'test'
+                                    }),
+                                    success: function (response) {
+                                        if (response && response.result && response.result.data) {
+                                            self.state.api_list_loaded = true;
+                                            var parsed = self.parseAPI(response.result.data);
+                                            callback.call(self, parsed);
+                                        }
+                                    },
+                                    error: function () {
+                                        /* TODO: Cool Error Handler */
+                                    }
+                                });
+                            },
+
+                            parseAPI: function (data) {
+                                var result = [];
+
+                                // Reformat array (Typeahead.js format)
+                                $.each(data, function (iter, item) {
+                                    result.push({
+										_code: item.code,
+                                        value: item.bank_name.replace(/&[a-z]+;/g, '') // Kill HTML entities
+                                    });
+                                });
+
+                                return result;
+                            }
+						}).init();
+					});
+				});
+			});
+		});
+	</script>
+</section>
+	</section>
+
+		
+
+	<section class="widget" id="responses-cities-links" data-test="seo-block">
+	<h3 class="widget__title widget__title--line" data-test="seo-block-title">
+					Отзывы о банках в городах
+			</h3>
+
+	<ul class="text-list" data-items data-test="seo-block-content">
+		
+					<li>
+															<a href="/services/responses/list/city/Moskva/product/credits/">Москва</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/city/Sankt-Peterburg/product/credits/">Санкт-Петербург</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/city/Novosibirsk/product/credits/">Новосибирск</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/city/Ekaterinburg/product/credits/">Екатеринбург</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/city/Nizhniy_Novgorod/product/credits/">Нижний Новгород</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/city/Kazan~/product/credits/">Казань</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/city/Samara/product/credits/">Самара</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/city/Omsk/product/credits/">Омск</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/city/Chelyabinsk/product/credits/">Челябинск</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/city/Rostov-na-Donu/product/credits/">Ростов-на-Дону</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/city/Ufa/product/credits/">Уфа</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/city/Volgograd/product/credits/">Волгоград</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/city/Krasnoyarsk/product/credits/">Красноярск</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/city/Perm~/product/credits/">Пермь</a>
+												</li>
+					<li>
+															<a href="/services/responses/list/city/Voronezh/product/credits/">Воронеж</a>
+												</li>
+			</ul>
+
+	<div data-pager class="margin-top-default"></div>
+
+	<script>
+		banki.utils.domReady.push(function() {
+			require(['jquery', 'inViewport'], function($) {
+				var $widget = $('#responses-cities-links');
+
+				$widget.inViewport(function() {
+					var $pager = $widget.find('[data-pager]'),
+						$items = $widget.find('[data-items]').children();
+
+					require(['ui.mini-pager'], function(pager) {
+						pager($pager, {
+							items: $items,
+							pageItemsCount: 10
+						});
+					});
+				});
+			});
+		});
+	</script>
+</section>		</aside>
+	</div>
+
+				<div style="clear: both;"></div>
+				
+									<div class="bitrix-component"
+	data-name="custom:advertising.block"
+	data-template="redesign.bottom"
+	data-params='{&quot;BANNER_TYPE&quot;:&quot;allpages&quot;,&quot;CODE&quot;:&quot;bottom&quot;}'
+	data-group="banners"
+		></div>
+							</div>
+		
+		<footer class="layout-wrapper footer">
+	<div class="layout-columns-wrapper">
+		<section class="layout-column-center">
+			
+			<h3 class="widget__title widget__title--line">
+				<a href="/" title="banki.ru • информационный портал">
+					<img class="footer__logo lazy-load" data-src="/static/common/media/logo-footer.svg" data-png="/static/common/media/logo-footer.png" alt="Банки.ру"/>
+				</a>
+			</h3>
+
+			<div class="footer__copyright">
+				<div class="margin-bottom-default">
+					&copy; 2005&mdash;2016 ИА &laquo;Банки.ру&raquo; <br />
+					При использовании материалов гиперссылка на Banki.ru обязательна.
+				</div>
+
+									<div class="footer__copyright__button">
+						<span class="footer__copyright__button__short">Вся правда о банках &reg;</span>
+						<span class="footer__copyright__button__full">Свидетельство на товарный знак № 445945 от 18.10.2011 г.</span>
+						<span class="icon-font icon-close footer__copyright__button__close"></span>
+					</div>
+				
+				<script>
+					banki.utils.domReady.push(function() {
+						require(['jquery'], function($) {
+							var $button = $('.footer__copyright__button');
+							var $close = $button.find('.footer__copyright__button__close');
+
+							if (!Modernizr.svg) {
+								$('.footer__logo').attr('src', $(this).data('png'));
+							}
+
+							$button.on('click', function() {
+								$button.addClass('footer__copyright__button--opened');
+							});
+
+							$close.on('click', function(event) {
+								event.stopPropagation();
+								$button.removeClass('footer__copyright__button--opened');
+							});
+						});
+					});
+				</script>
+			</div>
+		</section>
+
+		<aside class="layout-column-right">
+			<h3 class="widget__title widget__title--line">Мы в социальных сетях</h3>
+			<ul class="footer__social-list">
+				<li class="footer__social-item footer__social-item--facebook">
+					<a class="icon-font icon-facebook-24 icon-font--medium" href="//www.facebook.com/banki.ru" target="_blank" rel="nofollow"></a>
+				</li>
+				<li class="footer__social-item footer__social-item--twitter">
+					<a class="icon-font icon-twitter-24 icon-font--medium" href="//twitter.com/banki_ru" target="_blank" rel="nofollow"></a>
+				</li>
+				<li class="footer__social-item footer__social-item--vkontakte">
+					<a class="icon-font icon-vk-24 icon-font--medium" href="//vk.com/club17032179" target="_blank" rel="nofollow"></a>
+				</li>
+				<li class="footer__social-item footer__social-item--youtube">
+					<a class="icon-font icon-youtube-24 icon-font--medium" href="//www.youtube.com/BankiRu" target="_blank" rel="nofollow"></a>
+				</li>
+				<li class="footer__social-item footer__social-item--telegram">
+					<a class="icon-font icon-telegram icon-font--medium" href="https://www.telegram.me/banki_ru_bot" target="_blank" rel="nofollow"></a>
+				</li>
+			</ul>
+		</aside>
+	</div>
+
+	<div class="layout-column-full">
+        <div class="border-bottom-dotted hide-on-responsive"></div>
+        <menu class="footer__menu v-margins">
+            <li class="footer__item">
+                <a href="/info/about/">О проекте</a>
+            </li>
+            <li class="footer__item">
+                <a href="/info/advertising/">Реклама</a>
+            </li>
+            <li class="footer__item">
+                <a href="/info/contacts/">Контакты</a>
+            </li>
+            <li class="footer__item">
+                <a href="/info/contacts/feedback">Служба поддержки</a>
+            </li>
+            <li class="footer__item">
+                <a href="/rules/">Пользовательское соглашение</a>
+            </li>
+            <li class="footer__item">
+                <a href="/info/private/">Политика обработки персональных данных</a>
+            </li>
+            <li class="footer__item">
+                <a href="/sitemap/">Карта сайта</a>
+            </li>
+        </menu>
+	</div>
+
+			<div class="footer__counters">
+			<noscript>
+    <img height="1" width="1" alt=""
+         src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1064624868/?value=0&amp;label=5LLBCNThlQQQ5MXT-wM&amp;guid=ON&amp;script=0"/>
+</noscript>
+
+<!-- Remarketing tags may not be associated with personally identifiable
+information or placed on pages related to sensitive categories. For
+instructions on adding this tag and more information on the above
+requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script>
+    var google_conversion_id = 1064624868;
+    var google_conversion_label = "5LLBCNThlQQQ5MXT-wM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+</script>
+<script src="//www.googleadservices.com/pagead/conversion.js"></script>
+		</div>
+	</footer>
+		<div class="bitrix-component"
+	data-name="custom:advertising.block"
+	data-template="fullscreen"
+	data-params='{&quot;BANNER_TYPE&quot;:&quot;FULL_Screen&quot;,&quot;CODE&quot;:&quot;Banner&quot;}'
+	data-group="banners"
+		></div>
+
+		<section>
+			<div class="bitrix-component"
+				 data-name="custom:global.poll"
+				 data-template="left.bottom"
+				 data-group="banners"></div>
+		</section>
+
+		<div class="is-hidden">
+			<div class="bitrix-component"
+	data-name="custom:advertising.block"
+	data-template="blank"
+	data-params='{&quot;BANNER_TYPE&quot;:&quot;&quot;,&quot;CODE&quot;:&quot;page_counter&quot;}'
+	data-group="banners"
+		></div>
+			<div class="bitrix-component"
+	data-name="custom:advertising.block"
+	data-template="blank"
+	data-params='{&quot;BANNER_TYPE&quot;:&quot;&quot;,&quot;CODE&quot;:&quot;page_counter2&quot;}'
+	data-group="banners"
+		></div>
+		</div>
+
+		<script src="/static/common/bower/requirejs/require.js"></script>
+		<script src="/static/requirejs-config.js?_v=c9bfc1013b"></script>
+		<script src="/static/common/common.js?_v=ebf75544cd"></script>
+		<script src="/static/common/bankiru-layout.js?_v=aa681e1bb3"></script>
+
+			<script>
+		banki.utils.domReady.push(function() {
+			require(['/_lib/ga.js'], function() {
+				var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-208343-2']);
+				_gaq.push(['_setCustomVar', 1, 'NRDesign', 'new', 1]);
+				_gaq.push(['_trackPageview']);
+			});
+		});
+	</script>
+
+		<script>
+			banki.utils.domReady.run();
+		</script>
+
+		<div>
+			<div class="bitrix-component" data-name="ng:statistics" data-immediately="true"></div>
+		</div>
+
+			</body>
+</html>
+
+<!-- Page generation time: 0.655 sec. -->

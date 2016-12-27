@@ -61,6 +61,19 @@ h2{
   font-size: 1.2em;
 }
 
+a, a:hover{
+text-decoration: none;
+}
+a{
+color:  rgba(85, 128, 193, 1);
+border-bottom: 1px solid rgba(85, 128, 193, 0.3);
+  /*color: yellow;*/
+}
+a:hover{
+color: rgba(64, 96, 144, 1) !important;
+  /*color: red;*/
+border-bottom: 1px solid rgba(64, 96, 144, 0.6);
+}
 
 .axis path,
 .axis line {
@@ -80,7 +93,14 @@ h2{
   width: 200px;
 }
 
-svg g.main-group{
+svg.main{
+  /*background: url(/img/dummy-transparent.png) 43px 8px no-repeat;*/
+  /*background-size: 92.1%;*/
+}
+path.connector{
+  pointer-event: none;
+}
+svg.main g.main-group{
   cursor: pointer;
 }
 
@@ -105,33 +125,37 @@ body{
 }
 
 #list{
-  margin-left: 700px;
-  margin-top: 61px;
+  margin-left: 722px;
+  margin-right: -50px;
+  margin-top: 30px;
+  margin-bottom: 800px;
   /*margin-right: -40px;*/
 }
 
 .thumbnail{
   overflow: hidden;
-  /*white-space: nowrap;*/
   width: 225px;
   display: inline-block;
   position: relative;
-  /*height: 121px;*/
-  margin-left: 45px;
-  margin-bottom: 30px;
-  /*cursor: pointer;*/
+  vertical-align: top;
+  padding: 8px 22px;
+  margin: 15px 0;
+}
+
+.thumbnail:hover, .thumbnail.hover{
+  background: rgba(255, 204, 102, 0.3);
 }
 
   .thumbnail.shake{
     animation: shake 0.5s linear;
     transform: translate3d(0, 0, 0);
   }
-  .thumbnail.dead{
+  .thumbnail.dead>*{
     opacity: 0.3;
   }
 
   .thumbnail svg{
-    border-bottom: 1px solid #ddd;
+    /*border-bottom: 1px solid #ddd;*/
   }
 
   .thumbnail header{
@@ -140,7 +164,6 @@ body{
   }
   .thumbnail h2{
     display: inline;
-    background: white;
     line-height: 1;
     /*padding-right: 10px;*/
   }
@@ -149,7 +172,15 @@ body{
   .thumbnail .middle-grade{
     float: left;
   }
+  .thumbnail.dead .middle-grade .value,
+  .thumbnail.dead header h2 {
+    color: gray !important;
+  }
+  .thumbnail.dead header h2:after{
+    content: " (закрыт)";
+  }
   .thumbnail .middle-grade .value{
+    /*opacity: 0.5;*/
     display: block;
     font-size: 2.6em;
     font-weight: bold;
