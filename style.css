@@ -97,6 +97,13 @@ svg.main{
   /*background: url(/img/dummy-transparent.png) 43px 8px no-repeat;*/
   /*background-size: 92.1%;*/
 }
+
+svg.main .axis{
+  opacity: 0.3;
+}
+svg.main .axis .domain{
+  display: none;
+}
 path.connector{
   pointer-event: none;
   opacity: 0.3;
@@ -106,15 +113,24 @@ svg.main g.main-group{
   cursor: pointer;
   opacity: 0.5;
 }
+svg.main g.main-group.dead{
+  display: none;
+  fill: grey;
+  stroke: grey;
+}
+svg.main g.main-group.dead.within-viewport{
+  display: block;
+}
 svg.main g.main-group g{
   stroke-width: 0;
 }
 svg.main g.main-group.within-viewport{
-  /*opacity: 1;*/
   opacity: 0.7;
 }
 svg.main g.main-group.within-viewport g.points{
-  display: block !important;
+  display: block;
+}
+svg.main g.main-group.within-viewport g.responses{
 }
 svg.main g.main-group.within-viewport path.connector{
   stroke-width: 0.5;
@@ -124,21 +140,20 @@ svg.main g.main-group:hover,
 svg.main g.main-group.hover{
   opacity: 1;
   fill: black !important;
-  stroke: black !important;
 }
 svg.main g.main-group:hover path.connector,
 svg.main g.main-group.hover path.connector{
   opacity: 1;
   stroke: black !important;
 }
+svg.main g.main-group:hover g.points,
+svg.main g.main-group.hover g.points{
+  display: none;
+}
 svg.main g.main-group:hover g.responses,
 svg.main g.main-group.hover g.responses{
   opacity: 1;
   display: block;
-}
-svg.main g.main-group.dead{
-  fill: grey;
-  stroke: grey;
 }
 
 /*layout*/
