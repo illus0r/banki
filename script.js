@@ -15,7 +15,7 @@ var yValue = function(d) { return d.middleGrade;}, // data -> value
 var xValue = function(d) { return d.date;}, // data -> value
     xScale = d3.time.scale().range([0, svgMainSize.width]), // value -> display
     xAxis = d3.svg.axis().scale(xScale).orient("bottom");
-var yValueResponses = function(d) { return d.responseCountIncrease;}, // data -> value
+var yValueResponses = function(d) { var inc = d.responseCountIncrease; return inc>0?inc:0;}, // data -> value
     yScaleResponses = d3.scale.linear().range([0, 15]); // value -> display
     yAxisResponses = d3.svg.axis().scale(yScaleResponses).orient("left").ticks(1);
 
