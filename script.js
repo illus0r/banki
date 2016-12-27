@@ -16,7 +16,7 @@ var xValue = function(d) { return d.date;}, // data -> value
     xScale = d3.time.scale().range([0, svgMainSize.width]), // value -> display
     xAxis = d3.svg.axis().scale(xScale).orient("bottom");
 var yValueResponses = function(d) { var inc = d.responseCountIncrease; return inc>0?inc:0;}, // data -> value
-    yScaleResponses = d3.scale.linear().range([0, 50]); // value -> display
+    yScaleResponses = d3.scale.linear().range([1, 50]); // value -> display
     yAxisResponses = d3.svg.axis().scale(yScaleResponses).orient("left").ticks(1);
 
 //var oValue = function(d) { return d.date;}, // data -> value
@@ -203,7 +203,7 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         .attr("d", function(d){return line(d.values);})
         .attr("fill", "none");
       
-      var pointWidth = xScale(dateFormat("2000-01-07")) - xScale(dateFormat("2000-01-01"));
+      var pointWidth = xScale(dateFormat("2000-01-07")) - xScale(dateFormat("2000-01-01")) + 1;
       var responses = group
           .append("g")
           .attr("display", "none")
@@ -217,7 +217,7 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
           .attr("width", pointWidth)
           .attr("height", function(d){return yScaleResponses(yValueResponses(d));});
 
-      var pointHeight = 0.5;
+      var pointHeight = 1;
       var points = group
           .append("g")
           .attr("display", "none")
@@ -411,3 +411,7 @@ function showBank(key){
     //},500);
   //});
 }
+
+//$('html, body').animate({
+    //scrollTop: 2000
+//}, 3000);//, function(){

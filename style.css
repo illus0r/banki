@@ -106,8 +106,15 @@ svg.main g.main-group{
   cursor: pointer;
   opacity: 0.5;
 }
+svg.main g.main-group g{
+  stroke-width: 0;
+}
 svg.main g.main-group.within-viewport g{
   display: block !important;
+}
+svg.main g.main-group.within-viewport path.connector{
+  stroke-width: 0.5;
+  opacity: 1;
 }
 svg.main g.main-group:hover,
 svg.main g.main-group.hover{
@@ -123,7 +130,6 @@ svg.main g.main-group.hover path.connector{
 svg.main g.main-group:hover g.responses,
 svg.main g.main-group.hover g.responses{
   display: block;
-  fill: red;
 }
 svg.main g.main-group.dead{
   fill: grey;
