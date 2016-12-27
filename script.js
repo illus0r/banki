@@ -16,7 +16,7 @@ var xValue = function(d) { return d.date;}, // data -> value
     xScale = d3.time.scale().range([0, svgMainSize.width]), // value -> display
     xAxis = d3.svg.axis().scale(xScale).orient("bottom");
 var yValueResponses = function(d) { var inc = d.responseCountIncrease; return inc>0?inc:0;}, // data -> value
-    yScaleResponses = d3.scale.linear().range([1, 50]); // value -> display
+    yScaleResponses = d3.scale.linear().range([1.5, 50]); // value -> display
     yAxisResponses = d3.svg.axis().scale(yScaleResponses).orient("left").ticks(1);
 
 //var oValue = function(d) { return d.date;}, // data -> value
@@ -90,6 +90,7 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
           return (b.middleGrade + 9999*b.isLive) - (a.middleGrade + 9999*a.isLive) ;
         }
       );
+
 
       // Preparing dataProducts
       dataProducts = dataProducts.map(function(d){return {
@@ -170,6 +171,12 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
           //.style("text-anchor", "end")
           //.text("Отзывы");
 
+      d3.selection.prototype.moveToFront = function() {
+        return this.each(function(){
+        this.parentNode.appendChild(this);
+        });
+      };
+
       var group = svgMain.selectAll("g.main-group")
           .data(dataNested)
           .enter()
@@ -180,9 +187,11 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
           .attr("fill",   function(d){return cScale(cValue(d.values[0]))})
           .attr("stroke", function(d){return cScale(cValue(d.values[0]))})
           .on('mouseover', function(d){
-            var nodeSelection = d3.select(this).classed("hover", true);
+            var nodeSelection = d3.select(this);
+            nodeSelection.classed("hover", true);
             var id = "#thumbnail-"+d.key;
             var $id = $(id).addClass("hover");
+            nodeSelection.moveToFront();
           })
           .on('click', function(d){
             console.log(dataNames.filter(function(n){return n.id.toString() === d.key;})[0]);
@@ -203,7 +212,7 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         .attr("d", function(d){return line(d.values);})
         .attr("fill", "none");
       
-      var pointWidth = xScale(dateFormat("2000-01-07")) - xScale(dateFormat("2000-01-01")) + 1;
+      var pointWidth = xScale(dateFormat("2000-01-07")) - xScale(dateFormat("2000-01-01")) + 0.5;
       var responses = group
           .append("g")
           .attr("display", "none")
@@ -217,7 +226,7 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
           .attr("width", pointWidth)
           .attr("height", function(d){return yScaleResponses(yValueResponses(d));});
 
-      var pointHeight = 1;
+      var pointHeight = 2;
       var points = group
           .append("g")
           .attr("display", "none")
@@ -294,7 +303,9 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         .attr("class", function(d){return d.isLive? "live" : "dead";})
         .classed("thumbnail", true)
         .on('mouseover', function(d){
-          var mainGraph = d3.select("#group"+d.key.toString()).classed("hover", true);
+          var mainGraph = d3.select("#group"+d.key.toString());
+          mainGraph.classed("hover", true);
+          mainGraph.moveToFront();
         })
         .on('mouseout', function(d){
           var mainGraph = d3.select("#group"+d.key.toString()).classed("hover", false);
