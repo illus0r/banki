@@ -16,7 +16,7 @@ var xValue = function(d) { return d.date;}, // data -> value
     xScale = d3.time.scale().range([0, svgMainSize.width]), // value -> display
     xAxis = d3.svg.axis().scale(xScale).orient("bottom");
 var yValueResponses = function(d) { var inc = d.responseCountIncrease; return inc>0?inc:0;}, // data -> value
-    yScaleResponses = d3.scale.linear().range([1.5, 50]); // value -> display
+    yScaleResponses = d3.scale.linear().range([1, 50]); // value -> display
     yAxisResponses = d3.svg.axis().scale(yScaleResponses).orient("left").ticks(1);
 
 //var oValue = function(d) { return d.date;}, // data -> value
@@ -403,6 +403,10 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
           $("svg #group"+$(this).data("id")).addClass("within-viewport");
         });
       });
+      $('html, body').animate({
+          scrollTop: 2
+      }, 300);//, function(){
+
     });
   });
 });

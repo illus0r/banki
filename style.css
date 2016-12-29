@@ -96,10 +96,11 @@ border-bottom: 1px solid rgba(64, 96, 144, 0.6);
 svg.main{
   /*background: url(/img/dummy-transparent.png) 43px 8px no-repeat;*/
   /*background-size: 92.1%;*/
+  margin-left: -8px;
 }
 
 svg.main .axis{
-  opacity: 0.3;
+  opacity: 0.4;
 }
 svg.main .axis .domain{
   display: none;
