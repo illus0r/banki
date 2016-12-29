@@ -9,8 +9,7 @@ var svgMainMargin = {top: 10, right: 20, bottom: 30, left: 40},
 var xValue = function(d) { return d.date;}, // data -> value
     xScale = d3.time.scale().range([0, svgMainSize.width]), // value -> display
     xAxis = d3.svg.axis().scale(xScale).orient("bottom");
-//var yValue = function(d) { return d.middleGrade;}, // data -> value
-var yValue = function(d) { return d.rating;}, // data -> value
+var yValue = function(d) { return d.middleGrade;}, // data -> value
     yScale = d3.scale.linear().range([svgMainSize.height-20, 0]), // value -> display
     yAxis = d3.svg.axis().scale(yScale).orient("left").ticks(5);
 var xValue = function(d) { return d.date;}, // data -> value
@@ -88,11 +87,8 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
       });
       // sorting by rating, but live first
       dataNested = dataNested.sort( function(a, b){
-          return (b.rating + 9999*b.isLive) - (a.rating + 9999*a.isLive) ;
+          return (b.middleGrade + 9999*b.isLive) - (a.middleGrade + 9999*a.isLive) ;
         }
-      //dataNested = dataNested.sort( function(a, b){
-          //return (b.middleGrade + 9999*b.isLive) - (a.middleGrade + 9999*a.isLive) ;
-        //}
       );
 
 
@@ -132,8 +128,8 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
 
       //xScale.domain(d3.extent(data, xValue));
       xScale.domain([dateFormat("2004-12-31"), dateFormat("2017-01-01")]);
-      yScale.domain(d3.extent(data, yValue));
-      //yScale.domain([1,5]);
+      //yScale.domain(d3.extent(data, yValue));
+      yScale.domain([1,5]);
       yScaleResponses.domain([0,200]);
       cScale.domain(d3.extent(data, function(d) { return d.agentId; }));
       //oScale.domain(d3.extent(data, oValue));
@@ -281,12 +277,9 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         .domain([1,5]),
       thumbnailYAxis = d3.svg.axis().scale(thumbnailYScale).orient("left");
 
-  var thumbnailLineRating = d3.svg.line()
+  var thumbnailLineMiddleGrade = d3.svg.line()
       .x(function(d) { return thumbnailXScale(thumbnailXValue(d)); })
-      .y(function(d) { return thumbnailYScale(d.rating); });
-  //var thumbnailLineMiddleGrade = d3.svg.line()
-      //.x(function(d) { return thumbnailXScale(thumbnailXValue(d)); })
-      //.y(function(d) { return thumbnailYScale(d.middleGrade); });
+      .y(function(d) { return thumbnailYScale(d.middleGrade); });
   var thumbnailLineDeposits = d3.svg.line()
       .x(function(d) { return thumbnailXScale(d.date); })
       .y(function(d) { return thumbnailYScale(d.deposits); })
@@ -352,8 +345,7 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         .attr("fill", "none");
       var thumbnailGraph = thumbnailSvg
         .append("path")
-        //.attr("d", function(d){return thumbnailLineMiddleGrade(d.values);})
-        .attr("d", function(d){return thumbnailLineRating(d.values);})
+        .attr("d", function(d){return thumbnailLineMiddleGrade(d.values);})
         .attr("stroke", "black")
         .attr("stroke-width", 1.5)
         .attr("fill", "none");
@@ -376,18 +368,17 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
       var thumbnailGrades = thumbnailDiv.append("div")
         .attr("class", "grades");
 
-      //var thumbnailGradesMiddleGrade = thumbnailGrades
-      var thumbnailGradesRating = thumbnailGrades
+      var thumbnailGradesMiddleGrade = thumbnailGrades
         .append("div")
         .attr("class", "middle-grade");
-      var thumbnailGradesRatingLabel = thumbnailGradesRating
+      var thumbnailGradesMiddleGradeLabel = thumbnailGradesMiddleGrade
         .append("span")
         .attr("class", "label")
         .text("средняя оценка");
-      var thumbnailGradesRatingValue = thumbnailGradesRating
+      var thumbnailGradesMiddleGradeValue = thumbnailGradesMiddleGrade
         .append("span")
         .attr("class", "value")
-        .text( function(d){return d.rating.toFixed(1).replace(".", ",");});
+        .text( function(d){return d.middleGrade.toFixed(1).replace(".", ",");});
       var thumbnailGradesProducts = thumbnailGrades
         .append("div")
         .attr("class", "grades-products");
