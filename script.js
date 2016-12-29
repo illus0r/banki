@@ -396,6 +396,7 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
         .text( function(d){return "кредитам "+d.credits.toFixed(1).replace(".", ",");});
 
       $(window).on("load resize scroll",function(e){
+        console.log("window");
         $("g.main-group").removeClass("within-viewport");
         thumbnailsInViewport = $('.thumbnail')
           .withinviewport({sides: "top bottom", top: -110, bottom: -100});
