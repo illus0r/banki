@@ -251,10 +251,26 @@ body{
   color: #66C2A5;
 }
 .thumbnail .grades-products span.debitcards{
-  color: #FEA075;
+  color: #f9d523;
 }
 .thumbnail .grades-products span.credits{
-  color: #FFDE3C;
+  color: #FEA075;
+}
+.thumbnail path{
+  fill: none;
+  stroke-width: 1;
+}
+.thumbnail .thumbnail-deposits{
+  stroke: #66C2A5;
+}
+.thumbnail .thumbnail-debitcards{
+  stroke: #f9d523;
+}
+.thumbnail .thumbnail-credits{
+  stroke: #FEA075;
+}
+.thumbnail .thumbnail-middle-grade{
+  stroke: black;
 }
 
 

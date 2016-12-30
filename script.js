@@ -328,27 +328,19 @@ d3.json("/data-banki.ru/ratings-required.json", function(errorData, data) {
       thumbnailGraphProducts
         .append("path")
         .attr("d", function(d){return thumbnailLineDeposits(d);})
-        .attr("stroke", "#66C2A5")
-        .attr("stroke-width", 1)
-        .attr("fill", "none");
+        .attr("class", "thumbnail-deposits");
       thumbnailGraphProducts
         .append("path")
         .attr("d", function(d){return thumbnailLineCredits(d);})
-        .attr("stroke", "#FEA075")
-        .attr("stroke-width", 1)
-        .attr("fill", "none");
+        .attr("class", "thumbnail-credits");
       thumbnailGraphProducts
         .append("path")
         .attr("d", function(d){return thumbnailLineDebitcards(d);})
-        .attr("stroke", "#FFDE3C")
-        .attr("stroke-width", 1)
-        .attr("fill", "none");
+        .attr("class", "thumbnail-debitcards");
       var thumbnailGraph = thumbnailSvg
         .append("path")
         .attr("d", function(d){return thumbnailLineMiddleGrade(d.values);})
-        .attr("stroke", "black")
-        .attr("stroke-width", 1.5)
-        .attr("fill", "none");
+        .attr("class", "thumbnail-middle-grade");
 
       var thumbnailHeader = thumbnailDiv.append("header");
 
