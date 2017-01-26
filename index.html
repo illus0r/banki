@@ -3,6 +3,8 @@
 <meta charset="utf-8">
 <head>
 <link rel="stylesheet" href="style.css" />
+<link href="bower_components/Likely/release/likely.css" rel="stylesheet">
+<title>Народные оценки банков</title>
 </head>
 <body>
 <div id="preloader">
@@ -19,7 +21,20 @@
   <p><a href="http://www.banki.ru/services/responses/methodology/">Методика вычисления оценок</a></p>
 </div>
 </div>
-<div id="list"></div>
+<div class="column">
+  <div id="list"></div>
+  <footer>
+    <div class="likely">
+      <div class="twitter">Твитнуть</div>
+      <div class="facebook">Поделиться</div>
+      <div class="gplus">Плюсануть</div>
+      <div class="vkontakte">Поделиться</div>
+      <div class="telegram">Отправить</div>
+      <div class="pinterest" data-media="i/pinnable.jpg">Запинить</div>
+    </div>
+    <div class="author"> <a href="http://dianov.org">Дианов Иван</a> </div>
+  </footer>
+</div>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="https://d3js.org/d3-time.v1.min.js"></script>
 <script src="/bower_components/within-viewport/withinviewport.js"></script>
@@ -34,6 +49,7 @@ $( document ).ready(function() {
   document.scrollTop = 2;
 });
 </script-->
+<script src="bower_components/Likely/release/likely.js" type="text/javascript"></script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function (d, w, c) {
@@ -63,5 +79,6 @@ $( document ).ready(function() {
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/41846384" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+
 </body>
 </html>

@@ -166,6 +166,18 @@ body{
   overflow: hidden;
 }
 
+#list{
+  margin-bottom: 800px;
+  margin-left: -22px;
+  min-height: 1000px;
+}
+
+.author{
+  /*margin-bottom: 30px;*/
+  margin-top: 30px;
+
+}
+
 #main{
   margin-left: -39px;
   position: fixed;
@@ -177,12 +189,13 @@ body{
   margin-left: 40px;
 }
 
-#list{
+.column{
+  /*margin-right: -40px;*/
+  margin-bottom: 39px;
   margin-left: 722px;
   margin-right: -50px;
   margin-top: 30px;
-  margin-bottom: 800px;
-  /*margin-right: -40px;*/
+  padding-left: 22px;
 }
 
 .thumbnail{
@@ -298,7 +311,7 @@ body{
   /*background-position: 50% 50%;*/
   /*background-repeat: no-repeat;*/
   /*background-size: 100px 100px;*/
-  background-color: white;
+  /*background-color: white;*/
   bottom: 0;
   left: 0;
   position: fixed;
