@@ -325,21 +325,22 @@ $(function() {
             return temp;
           })
           .enter();
-        thumbnailGraphProducts
-          .append("path")
-          .attr("d", function(d){return thumbnailLineDeposits(d);})
-          .attr("class", "thumbnail-deposits");
-        thumbnailGraphProducts
-          .append("path")
-          .attr("d", function(d){return thumbnailLineCredits(d);})
-          .attr("class", "thumbnail-credits");
-        thumbnailGraphProducts
-          .append("path")
-          .attr("d", function(d){return thumbnailLineDebitcards(d);})
-          .attr("class", "thumbnail-debitcards");
+        //thumbnailGraphProducts
+          //.append("path")
+          //.attr("d", function(d){return thumbnailLineDeposits(d);})
+          //.attr("class", "thumbnail-deposits");
+        //thumbnailGraphProducts
+          //.append("path")
+          //.attr("d", function(d){return thumbnailLineCredits(d);})
+          //.attr("class", "thumbnail-credits");
+        //thumbnailGraphProducts
+          //.append("path")
+          //.attr("d", function(d){return thumbnailLineDebitcards(d);})
+          //.attr("class", "thumbnail-debitcards");
         var thumbnailGraph = thumbnailSvg
           .append("path")
           .attr("d", function(d){return thumbnailLineMiddleGrade(d.values);})
+          .attr("stroke", function(d){return cScale(d.key);})
           .attr("class", "thumbnail-middle-grade");
 
         var thumbnailHeader = thumbnailDiv.append("header");
@@ -374,18 +375,18 @@ $(function() {
         var thumbnailGradesProducts = thumbnailGrades
           .append("div")
           .attr("class", "grades-products");
-        var thumbnailGradesProductsDeposits = thumbnailGradesProducts
-          .append("span")
-          .attr("class", "deposits")
-          .text( function(d){return "по вкладам "+d.deposits.toFixed(1).replace(".", ",");});
-        var thumbnailGradesProductsDebitcards = thumbnailGradesProducts
-          .append("span")
-          .attr("class", "debitcards")
-          .text( function(d){return "деб. картам "+d.debitcards.toFixed(1).replace(".", ",");});
-        var thumbnailGradesProductsCredits = thumbnailGradesProducts
-          .append("span")
-          .attr("class", "credits")
-          .text( function(d){return "кредитам "+d.credits.toFixed(1).replace(".", ",");});
+        //var thumbnailGradesProductsDeposits = thumbnailGradesProducts
+          //.append("span")
+          //.attr("class", "deposits")
+          //.text( function(d){return "по вкладам "+d.deposits.toFixed(1).replace(".", ",");});
+        //var thumbnailGradesProductsDebitcards = thumbnailGradesProducts
+          //.append("span")
+          //.attr("class", "debitcards")
+          //.text( function(d){return "деб. картам "+d.debitcards.toFixed(1).replace(".", ",");});
+        //var thumbnailGradesProductsCredits = thumbnailGradesProducts
+          //.append("span")
+          //.attr("class", "credits")
+          //.text( function(d){return "кредитам "+d.credits.toFixed(1).replace(".", ",");});
 
         $(window).on("load resize scroll",function(e){
           $("g.main-group").removeClass("within-viewport");

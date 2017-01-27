@@ -167,7 +167,7 @@ body{
 }
 
 #list{
-  margin-bottom: 800px;
+  margin-bottom: 100px;
   margin-left: -22px;
   min-height: 1000px;
 }
@@ -282,8 +282,13 @@ body{
 .thumbnail .thumbnail-credits{
   stroke: #FEA075;
 }
-.thumbnail .thumbnail-middle-grade{
+.thumbnail:hover .thumbnail-middle-grade,
+.thumbnail.hover .thumbnail-middle-grade{
   stroke: black;
+}
+.thumbnail:hover header h2,
+.thumbnail.hover header h2{
+  color: black !important;
 }
 
 
